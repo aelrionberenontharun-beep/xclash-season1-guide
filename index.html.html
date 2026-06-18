@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X-Clash Season 1 - Winter Is Coming / Polar Tempest - Multi-language Guide</title>
+<style>
+:root { --bg:#06111f; --panel:#0f2035; --panel2:#132a46; --text:#eef7ff; --muted:#b8cbe0; --ice:#8be9ff; --gold:#f7d46b; --line:rgba(139,233,255,.24); --shadow:rgba(0,0,0,.35); }
+* { box-sizing:border-box } html { scroll-behavior:smooth } body { margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:radial-gradient(circle at 18% 0%,#1e4c78 0,transparent 28%),linear-gradient(135deg,#07111f,#020617 70%); color:var(--text); line-height:1.65; }
+a { color:var(--ice); text-decoration:none } a:hover { text-decoration:underline }
+#top { position:absolute; top:0 }
+.hero { min-height:62vh; display:flex; align-items:center; justify-content:center; padding:56px 18px 28px; text-align:center; border-bottom:1px solid var(--line); }
+.hero-inner { max-width:1100px; } .kicker { color:var(--ice); text-transform:uppercase; letter-spacing:.18em; font-weight:700; }
+h1.main { font-size:clamp(2.4rem,7vw,5.6rem); line-height:.95; margin:18px 0; letter-spacing:-.05em; }
+.subtitle { font-size:clamp(1.1rem,2.8vw,1.7rem); color:var(--muted); max-width:980px; margin:0 auto 24px; }
+.navbar { position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:rgba(3,10,22,.82); border-bottom:1px solid var(--line); padding:10px 12px; }
+.langbar { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; max-width:1180px; margin:0 auto; }
+.lang-btn { border:1px solid var(--line); background:linear-gradient(180deg,var(--panel2),var(--panel)); color:var(--text); border-radius:999px; padding:9px 14px; cursor:pointer; font-weight:800; box-shadow:0 8px 22px var(--shadow); }
+.lang-btn span { font-weight:500; color:var(--muted); margin-left:6px } .lang-btn.active { outline:2px solid var(--ice); color:#04111f; background:linear-gradient(180deg,#b9f5ff,#61d9f7); } .lang-btn.active span { color:#083144 }
+.wrapper { max-width:1180px; margin:0 auto; padding:24px 18px 80px; }
+.notice { background:linear-gradient(135deg,rgba(139,233,255,.12),rgba(247,212,107,.08)); border:1px solid var(--line); border-radius:24px; padding:18px 22px; margin:22px 0; color:var(--muted); }
+.lang-section { display:none; } .lang-section.active { display:block; }
+.lang-title { display:flex; align-items:center; gap:16px; margin:28px 0; } .lang-title span { display:grid; place-items:center; width:64px; height:64px; border-radius:20px; background:var(--ice); color:#04111f; font-weight:900; font-size:1.45rem; } .lang-title h1 { margin:0; font-size:2.2rem; }
+.toc-card,.chapter { background:rgba(15,32,53,.88); border:1px solid var(--line); border-radius:22px; padding:22px; margin:18px 0; box-shadow:0 16px 42px var(--shadow); }
+.toc-card h2,.chapter h2 { margin-top:0; color:var(--ice); } .toc-card ol { columns:2; gap:30px; padding-left:26px; } .toc-card li { break-inside:avoid; margin:7px 0; }
+.chapter { position:relative; } .chapter ul { margin:0; padding-left:24px; } .chapter li { margin:10px 0; }
+.toplink { position:absolute; top:16px; right:16px; display:grid; place-items:center; width:36px; height:36px; border-radius:50%; background:rgba(139,233,255,.13); border:1px solid var(--line); font-weight:900; }
+.footer { text-align:center; color:var(--muted); padding:38px 18px; border-top:1px solid var(--line); }
+@media (max-width:760px) { .lang-btn span { display:none } .toc-card ol { columns:1 } .lang-title { align-items:flex-start } .chapter,.toc-card { padding:18px } h1.main { font-size:2.7rem } }
+@media print { .navbar,.toplink { display:none } body { background:white; color:black } .lang-section { display:block } .hero,.toc-card,.chapter { box-shadow:none; border:1px solid #999; background:white; color:black } a { color:black } }
+</style>
+</head>
+<body>
+<div id="top"></div>
+<header class="hero"><div class="hero-inner"><div class="kicker">X-Clash Season 1 Guide</div><h1 class="main">WINTER IS COMING<br>POLAR TEMPEST</h1><p class="subtitle">Single-file HTML guide with language switching. Choose a language below; only the selected version is shown.</p></div></header>
+<nav class="navbar"><div class="langbar"><button class="lang-btn" data-lang="en">EN<span>English</span></button><button class="lang-btn" data-lang="de">DE<span>Deutsch</span></button><button class="lang-btn" data-lang="es">ES<span>Español</span></button><button class="lang-btn" data-lang="br">BR<span>Português (Brasil)</span></button><button class="lang-btn" data-lang="fr">FR<span>Français</span></button><button class="lang-btn" data-lang="gr">GR<span>Ελληνικά</span></button><button class="lang-btn" data-lang="ro">RO<span>Română</span></button><button class="lang-btn" data-lang="pl">PL<span>Polski</span></button></div></nav>
+<main class="wrapper">
+<div class="notice"><strong>Read-only style:</strong> this is a static single-page HTML guide. It is easy to read and share, but normal viewers cannot edit it like a Word document. Use the language buttons to switch between EN, DE, ES, BR, FR, GR, RO and PL without reducing the guide content.</div>
+<section class="lang-section" id="lang-en" data-lang="en">
+<div class="lang-title"><span>EN</span><h1>English</h1></div>
+<div class="toc-card"><h2>Table of Contents / Inhaltsverzeichnis / Índice</h2><ol><li><a href="#en-1-purpose-and-source-hierarchy">Purpose and source hierarchy</a></li><li><a href="#en-2-season-1-in-one-sentence">Season 1 in one sentence</a></li><li><a href="#en-3-preparation-before-entering-the-season">Preparation before entering the season</a></li><li><a href="#en-4-heat-freezing-and-furnaces">Heat, freezing and furnaces</a></li><li><a href="#en-5-castle-placement-and-contaminated-land">Castle placement and contaminated land</a></li><li><a href="#en-6-mines-cities-and-ice-crystals">Mines, cities and ice crystals</a></li><li><a href="#en-7-route-planning-and-early-expansion">Route planning and early expansion</a></li><li><a href="#en-8-kingdom-expedition-and-outposts">Kingdom Expedition and outposts</a></li><li><a href="#en-9-diplomacy-war-days-and-tiles">Diplomacy, war days and tiles</a></li><li><a href="#en-10-class-hall-class-skills-and-reset-strategy">Class Hall, class skills and reset strategy</a></li><li><a href="#en-11-heroes-season-boosts-crystal-and-level-swap">Heroes, Season Boosts, Crystal and Level Swap</a></li><li><a href="#en-12-level-6-cities-royal-city-and-endgame-timing">Level 6 cities, Royal City and endgame timing</a></li><li><a href="#en-13-after-season-1-and-black-market">After Season 1 and Black Market</a></li><li><a href="#en-14-daily-leadership-checklist">Daily leadership checklist</a></li><li><a href="#en-15-glossary-and-final-summary">Glossary and final summary</a></li></ol></div>
+<article class="chapter" id="en-1-purpose-and-source-hierarchy"><a class="toplink" href="#top" title="Top">↑</a><h2>1. Purpose and source hierarchy</h2><ul>
+<li>This guide is a practical union leadership guide for X-Clash Season 1: Winter Is Coming / Polar Tempest. It is designed for any union, not for one specific server.</li>
+<li>Source hierarchy: official X-Clash / Strawberry material is treated as highest authority; Animality / Pioneer Test Group as strong practical evidence; experienced guide contributors and player reports as useful field evidence; isolated comments as low-confidence hints.</li>
+<li>If the event calendar, official spreadsheet or current in-game rules contradict older Discord posts, always follow the current in-game information first.</li>
+<li>The purpose is not to explain every button, but to give leaders and active players a usable order of priorities: heat, territory, route, diplomacy, stamina, rewards and endgame security.</li>
+</ul></article>
+<article class="chapter" id="en-2-season-1-in-one-sentence"><a class="toplink" href="#top" title="Top">↑</a><h2>2. Season 1 in one sentence</h2><ul>
+<li>Season 1 is not only a combat season. It is a logistics, survival and territory-control season.</li>
+<li>The strongest unions are not always the ones that attack the most. They are the ones that keep their players warm, hold useful mines and cities, use stamina efficiently, respect agreements when useful and prepare the final weeks early.</li>
+<li>The central principle is: stay warm, expand with purpose, hold what matters, and do not wait until the last week to fix strategic mistakes.</li>
+</ul></article>
+<article class="chapter" id="en-3-preparation-before-entering-the-season"><a class="toplink" href="#top" title="Top">↑</a><h2>3. Preparation before entering the season</h2><ul>
+<li>Teach players how to park their castles correctly. Season 1 requires tight castle placement inside warm zones; scattered castles freeze and become inefficient.</li>
+<li>Make sure players understand the rally point / union teleport placement mechanic. If a player relocates incorrectly, the union may lose time and heat coverage.</li>
+<li>Remove teams from castle wall defense before dangerous war phases unless leadership instructs otherwise: Castle Wall &gt; City Defense &gt; uncheck Join the defense for each team. Leaving teams on the wall can let enemies drain troops.</li>
+<li>Save stamina. Frost mines, zombies, monsters, skeletons, dragons, Nightfall wolves/sharks and recurring events all compete for the same stamina pool.</li>
+<li>Save purple S hero shards. A five-star Crystal can be promoted during Season 1 into a gold S+ version, but star-up costs can become expensive.</li>
+<li>Expect bugs. Season 1 mechanics have changed between server groups; event calendar and live game rules must be checked frequently.</li>
+</ul></article>
+<article class="chapter" id="en-4-heat-freezing-and-furnaces"><a class="toplink" href="#top" title="Top">↑</a><h2>4. Heat, freezing and furnaces</h2><ul>
+<li>There are two important furnace concepts. The personal Thermal Furnace supports your own castle, resistance and ability to fight or conquer. The Union Furnace provides heat to surrounding castles and helps the union operate in colder zones.</li>
+<li>Cold Snap is the recurring danger. If players do not keep their furnace ready, castles may freeze and lose access to important activities.</li>
+<li>A frozen castle can still do some tasks: kill Frost Zombies, farm resources, kill normal zombies, plunder wagons, complete some intelligence quests, do some tavern plunder tasks, attack World Boss and relocate.</li>
+<li>A frozen castle cannot do key actions such as fighting Elite Zombies, launching rallies or joining Union Boss. This is why warming and furnace discipline are not optional.</li>
+<li>Union Furnace placement matters. Place it so it covers active castles and important operational areas. When moving deeper, placing it near or inside useful occupied city areas is often stronger than placing it randomly.</li>
+<li>Occupied cities provide local heat. Frost mines do not provide heat. The inner map is colder than the outer map, so moving inward too early can create problems during Cold Snap.</li>
+</ul></article>
+<article class="chapter" id="en-5-castle-placement-and-contaminated-land"><a class="toplink" href="#top" title="Top">↑</a><h2>5. Castle placement and contaminated land</h2><ul>
+<li>Castles should normally be parked inside the warm area, close to the union group and within practical range of the Union Furnace.</li>
+<li>Avoid dark or contaminated land around mines and cities when possible. Reports indicate that it can bring restrictions and greater attack risk, especially compared with normal safe land.</li>
+<li>Early in the season, many unions stay near level 1 village or level 2 frost mine areas because the temperature is easier to manage.</li>
+<li>Before moving the whole union, heat key players first, check furnace coverage, and make sure weaker players know where to park.</li>
+<li>A move is not only a teleport decision. It is a heat, rally, defense, stamina and activity decision.</li>
+</ul></article>
+<article class="chapter" id="en-6-mines-cities-and-ice-crystals"><a class="toplink" href="#top" title="Top">↑</a><h2>6. Mines, cities and ice crystals</h2><ul>
+<li>Frost mines and cities are the scoring backbone of Season 1. Capturing is useful, but holding is what matters for Ice Crystal points.</li>
+<li>Community and official-derived notes repeatedly indicate that Ice Crystal value is based on what the union holds, not merely on what it once captured. Dropping territory can therefore reduce value.</li>
+<li>Base frost mine capacity is commonly reported as 3. Each additional city or village usually adds mine capacity; level 6 cities can add more, commonly reported as +2.</li>
+<li>City capacity and mine capacity vary by home server and cross-server phase. Reports mention home caps such as 4 cities and 7 mines, and cross-server caps such as 4 cities and higher mine limits. Always verify in Union City and current event rules.</li>
+<li>First capture rewards can give union loot boxes. These should be handled fairly by leadership. Check whether a mine or city already had a first-capture tag before expecting rewards.</li>
+<li>Do not abandon important cities or mines without coordination. Territory is score, access, route control, heat planning and future negotiation power.</li>
+</ul></article>
+<article class="chapter" id="en-7-route-planning-and-early-expansion"><a class="toplink" href="#top" title="Top">↑</a><h2>7. Route planning and early expansion</h2><ul>
+<li>Do not overplan a perfect route before the season opens, because the starting location may not be known until the map begins.</li>
+<li>Once the union lands, plan a route quickly. The path should move toward valuable mines, useful cities and eventually key city areas.</li>
+<li>If a frost mine boss is too strong, do not waste the whole day. Pivot to a nearby lower-level mine and keep the route moving.</li>
+<li>Frost mines do not always need to be captured in numerical order, but they usually must touch owned land. Diagonal contact is generally not enough; adjacency matters.</li>
+<li>City levels open by time gates. Early city declarations may be available more often, while later in Season 1 they may be restricted to specific days such as Wednesday and Saturday.</li>
+</ul></article>
+<article class="chapter" id="en-8-kingdom-expedition-and-outposts"><a class="toplink" href="#top" title="Top">↑</a><h2>8. Kingdom Expedition and outposts</h2><ul>
+<li>Kingdom Expedition opens the cross-server phase. R4/R5 usually place outposts on other servers. Outposts cannot normally be placed on the home server.</li>
+<li>Reports differ on whether outposts can be moved, so assume placement is important and check the current event interface before committing.</li>
+<li>After an outpost is placed, the first mine connected to the outpost often becomes the practical starting point. Expansion then follows adjacent land.</li>
+<li>Once Expedition is open, free relocation can often be used by moving through expedition and returning correctly. This should be practiced by inexperienced players to avoid wasting teleports.</li>
+<li>Do not invade blindly. Trading and diplomacy with other servers can save troops, especially because Clash of Kingdoms and other events still continue during Season 1.</li>
+<li>Each union may choose its own target, and several unions can pressure the same server. This makes diplomacy and timing more valuable than emotional attacks.</li>
+</ul></article>
+<article class="chapter" id="en-9-diplomacy-war-days-and-tiles"><a class="toplink" href="#top" title="Top">↑</a><h2>9. Diplomacy, war days and tiles</h2><ul>
+<li>Season 1 can destroy troop counts if unions attack castles without purpose. Many servers use agreements to avoid unnecessary castle attacks and preserve soldiers.</li>
+<li>Coexistence is a strategy, not weakness. If two unions can trade objectives, exchange short holding windows or avoid burning castles, both sides may progress faster.</li>
+<li>Resource tiles are different from castles. Unless there is a non-aggression agreement, enemies on resource tiles can often be attacked or pushed away.</li>
+<li>War days require clear instructions. If the union fights, fight with targets and timing. If the union respects an agreement, communicate it clearly.</li>
+<li>Inactives and players who do not want to fight should understand shield expectations. Even if agreements exist, mistakes, outsiders or tile conflicts can still happen.</li>
+<li>Royal City during Season 1 may become 0°C during Clash of Kingdoms, but this is not a permanent kingdom-wide heat solution.</li>
+</ul></article>
+<article class="chapter" id="en-10-class-hall-class-skills-and-reset-strategy"><a class="toplink" href="#top" title="Top">↑</a><h2>10. Class Hall, class skills and reset strategy</h2><ul>
+<li>Class Hall and class experience are important Season 1 systems. The Architect class is frequently discussed because of construction, research and siege-related utility.</li>
+<li>Some skills increase city wall durability damage during city siege. This matters for cities more than for ordinary monster hits.</li>
+<li>Some skills, such as Forced March or Siege Banner, have mixed or inconsistent community test results. Do not overinvest blindly without observing your own server’s behavior.</li>
+<li>Level 15+ skills have been unlocked at different times for different servers. If a row is locked, it may be server stage, bug or delayed unlock.</li>
+<li>Class skill reset can be used strategically. Normal skills learned after reset should remain useful after Season 1, while Season skills may be refunded or become unavailable after the season.</li>
+<li>Near the end of Season 1, consider moving points away from temporary Season-only skills and toward long-term normal skills such as Research, Building and Resource Production, if those match the player’s goals.</li>
+</ul></article>
+<article class="chapter" id="en-11-heroes-season-boosts-crystal-and-level-swap"><a class="toplink" href="#top" title="Top">↑</a><h2>11. Heroes, Season Boosts, Crystal and Level Swap</h2><ul>
+<li>Season Boost heroes mentioned in community material include Crystal, Sera, Fenixia/Fenxia and Daphne. These heroes deserve extra attention during Season 1 planning.</li>
+<li>Crystal is especially important for free-to-play and low-spend players. A five-star Crystal can be promoted into a gold S+ version during Season 1, but further star progress may require many purple S+ shards.</li>
+<li>Level Swap swaps hero EXP levels only. It does not transfer stars, ascension, medals or skill levels. If a hero drops to a lower level, some skills may lock again until the level is restored.</li>
+<li>Do not rush Level Swap onto a new gold hero with no stars. A high-level but low-star hero may still be unusable. The stronger strategy is to collect shards first, then swap when the target hero can become battle-ready.</li>
+<li>Sera’s Bow of Tomorrow is exclusive gear. It does not replace normal gear; it adds extra skills and can increase max skill levels. Unlock usually requires five-star Sera and specific bow shards. Universal exclusive gear shards may upgrade but not unlock it.</li>
+<li>Exclusive gear can be expensive. Black Market / Season Festival may provide slower access later, but this depends on available shops and server timing.</li>
+</ul></article>
+<article class="chapter" id="en-12-level-6-cities-royal-city-and-endgame-timing"><a class="toplink" href="#top" title="Top">↑</a><h2>12. Level 6 cities, Royal City and endgame timing</h2><ul>
+<li>Level 6 cities are among the most important normal cities before Royal City. They can provide high Ice Crystal value and may be connected to Royal City access or influence.</li>
+<li>If level 6 cities are already controlled by stronger unions, negotiation may be more realistic than direct force. Agreements, temporary holding windows and coordinated rewards can matter.</li>
+<li>Week 7 is widely treated as the decisive endgame push. Waiting until the final days is dangerous because protection timers, locked maps or changing rules may prevent recovery.</li>
+<li>Do not lose a level 6 city late and assume it can be reclaimed after Season 1. Several server reports describe cities and mines becoming locked after the season or after late Week 7.</li>
+<li>Royal City gives authority, rewards, titles or buffs, but it does not necessarily give Ice Crystals. Royal Furnace heat is local, not a permanent server-wide temperature solution.</li>
+<li>The practical endgame goal is to hold the best realistic combination of factories, useful cities, frost mines and key access points while avoiding unnecessary troop losses.</li>
+</ul></article>
+<article class="chapter" id="en-13-after-season-1-and-black-market"><a class="toplink" href="#top" title="Top">↑</a><h2>13. After Season 1 and Black Market</h2><ul>
+<li>After Season 1, the Season Festival / Black Market phase may appear. This is an off-season recovery and preparation phase.</li>
+<li>Black Gold Coins, bingo quests and shop rotations may become important. Prioritize items that support long-term growth: exclusive shards when needed, decorations, frames, speedups, hero-related resources and other limited-value items.</li>
+<li>Some seasonal buildings or map elements may remain visually or functionally for a time, while S1-specific events such as Cold Snap, treasures or Expedition may end.</li>
+<li>Rules after the season have changed between server groups. Do not assume old reclaim windows still work. Plan as if Week 7 is your last reliable chance to fix territory problems.</li>
+</ul></article>
+<article class="chapter" id="en-14-daily-leadership-checklist"><a class="toplink" href="#top" title="Top">↑</a><h2>14. Daily leadership checklist</h2><ul>
+<li>Check event calendar before giving orders. Rules can change by week.</li>
+<li>Check furnace status, coal/gold donations and whether active players are inside warm coverage.</li>
+<li>Confirm daily mine attempts are used on route-relevant targets, not random isolated territory.</li>
+<li>Coordinate city declarations and avoid accidental drops, especially after mid-season.</li>
+<li>Track diplomacy: who has non-aggression agreements, who can be hit on tiles, who is allowed short reward access.</li>
+<li>Remind players to spend stamina intelligently between mines, zombies, Arm Race, skeletons, dragons, Nightfall wolves/sharks and other recurring events.</li>
+<li>Prepare Week 7 before it arrives: key cities, access mines, enemy holding patterns, furnace placement, rally leaders and shield reminders.</li>
+</ul></article>
+<article class="chapter" id="en-15-glossary-and-final-summary"><a class="toplink" href="#top" title="Top">↑</a><h2>15. Glossary and final summary</h2><ul>
+<li>Thermal Furnace: personal furnace that supports castle heat and resistance.</li>
+<li>Union Furnace: alliance furnace that warms the area and helps the union operate in colder zones.</li>
+<li>Cold Snap: recurring temperature drop that can freeze castles.</li>
+<li>Frost Mine: seasonal mine territory used for expansion, rewards and Ice Crystal scoring.</li>
+<li>City: seasonal territory such as village, manor, factory, town or level 6 metropolis/library.</li>
+<li>Ice Crystals: core Season 1 scoring resource, strongly tied to held territory.</li>
+<li>Outpost: Expedition structure used to start cross-server expansion.</li>
+<li>Tile: resource gathering field; often treated differently from castle attacks.</li>
+<li>Final summary: Season 1 rewards unions that stay warm, coordinate territory, use stamina well, respect useful agreements, and secure endgame positions before it is too late.</li>
+</ul></article>
+</section><section class="lang-section" id="lang-de" data-lang="de">
+<div class="lang-title"><span>DE</span><h1>Deutsch</h1></div>
+<div class="toc-card"><h2>Table of Contents / Inhaltsverzeichnis / Índice</h2><ol><li><a href="#de-1-zweck-und-quellengewichtung">Zweck und Quellengewichtung</a></li><li><a href="#de-2-season-1-in-einem-satz">Season 1 in einem Satz</a></li><li><a href="#de-3-vorbereitung-vor-season-start">Vorbereitung vor Season-Start</a></li><li><a href="#de-4-warme-einfrieren-und-ofen">Wärme, Einfrieren und Öfen</a></li><li><a href="#de-5-burgplatzierung-und-kontaminiertes-land">Burgplatzierung und kontaminiertes Land</a></li><li><a href="#de-6-minen-stadte-und-eiskristalle">Minen, Städte und Eiskristalle</a></li><li><a href="#de-7-routenplanung-und-fruhe-expansion">Routenplanung und frühe Expansion</a></li><li><a href="#de-8-konigreichsexpedition-und-auenposten">Königreichsexpedition und Außenposten</a></li><li><a href="#de-9-diplomatie-kriegstage-und-ressourcenfelder">Diplomatie, Kriegstage und Ressourcenfelder</a></li><li><a href="#de-10-klassenhalle-klassenskills-und-reset-strategie">Klassenhalle, Klassenskills und Reset-Strategie</a></li><li><a href="#de-11-helden-season-boosts-crystal-und-level-tausch">Helden, Season-Boosts, Crystal und Level-Tausch</a></li><li><a href="#de-12-level-6-stadte-konigsstadt-und-endgame-timing">Level-6-Städte, Königsstadt und Endgame-Timing</a></li><li><a href="#de-13-nach-season-1-und-schwarzmarkt">Nach Season 1 und Schwarzmarkt</a></li><li><a href="#de-14-tagliche-fuhrungs-checkliste">Tägliche Führungs-Checkliste</a></li><li><a href="#de-15-glossar-und-schlusszusammenfassung">Glossar und Schlusszusammenfassung</a></li></ol></div>
+<article class="chapter" id="de-1-zweck-und-quellengewichtung"><a class="toplink" href="#top" title="Top">↑</a><h2>1. Zweck und Quellengewichtung</h2><ul>
+<li>Dieser Guide ist eine praktische Führungsanleitung für X-Clash Season 1: Winter Is Coming / Polar Tempest. Er ist für jede Union nutzbar und nicht auf einen bestimmten Server ausgerichtet.</li>
+<li>Quellengewichtung: offizielles X-Clash-Material / Strawberry zählt am höchsten; Animality / Pioneer Test Group gilt als starke Praxiserfahrung; erfahrene Guide-Autoren und Spielerberichte sind nützliche Feldberichte; einzelne Kommentare sind Hinweise mit niedrigerer Sicherheit.</li>
+<li>Wenn Event-Kalender, offizielle Tabelle oder aktuelle Ingame-Regeln älteren Discord-Posts widersprechen, gilt zuerst die aktuelle Ingame-Information.</li>
+<li>Ziel ist nicht jede Schaltfläche zu erklären, sondern eine brauchbare Reihenfolge für Führung und aktive Spieler zu geben: Wärme, Gebiet, Route, Diplomatie, Ausdauer, Belohnungen und Endgame-Sicherung.</li>
+</ul></article>
+<article class="chapter" id="de-2-season-1-in-einem-satz"><a class="toplink" href="#top" title="Top">↑</a><h2>2. Season 1 in einem Satz</h2><ul>
+<li>Season 1 ist nicht nur eine Kampfseason. Es ist eine Logistik-, Überlebens- und Gebietskontrollseason.</li>
+<li>Die stärksten Unionen sind nicht immer jene, die am meisten angreifen. Stark sind jene, die ihre Spieler warm halten, nützliche Minen und Städte halten, Ausdauer effizient nutzen, sinnvolle Absprachen respektieren und die Schlussphase früh vorbereiten.</li>
+<li>Das Grundprinzip lautet: warm bleiben, mit Ziel expandieren, Wichtiges halten und strategische Fehler nicht erst in der letzten Woche korrigieren wollen.</li>
+</ul></article>
+<article class="chapter" id="de-3-vorbereitung-vor-season-start"><a class="toplink" href="#top" title="Top">↑</a><h2>3. Vorbereitung vor Season-Start</h2><ul>
+<li>Spieler müssen wissen, wie sie ihre Burg richtig platzieren. Season 1 verlangt enge Burgaufstellung in warmen Zonen; verstreute Burgen frieren schneller und arbeiten ineffizient.</li>
+<li>Spieler sollten die Mechanik von Sammelpunkt / Unions-Teleport verstehen. Falsches Umziehen kostet Zeit und kann die Wärmeabdeckung stören.</li>
+<li>Teams vor gefährlichen Kriegsphasen von der Burgmauer-Verteidigung entfernen, sofern Führung nichts anderes sagt: Burgmauer &gt; Stadtverteidigung &gt; Bei jedem Team „Verteidigung beitreten“ deaktivieren. Teams auf der Mauer können Gegnern erlauben, Soldaten zu entziehen.</li>
+<li>Ausdauer sparen. Frostminen, Zombies, Monster, Skelette, Drachen, Nightfall-Wölfe/-Haie und wiederkehrende Events greifen alle auf dieselbe Ausdauer zurück.</li>
+<li>Violette S-Heldenfragmente sparen. Eine 5-Sterne-Crystal kann während Season 1 zu einer goldenen S+ Version befördert werden, aber weiteres Hochsternen kann teuer werden.</li>
+<li>Mit Fehlern rechnen. Season-1-Regeln änderten sich zwischen Servergruppen; Event-Kalender und aktuelle Spielregeln müssen regelmäßig geprüft werden.</li>
+</ul></article>
+<article class="chapter" id="de-4-warme-einfrieren-und-ofen"><a class="toplink" href="#top" title="Top">↑</a><h2>4. Wärme, Einfrieren und Öfen</h2><ul>
+<li>Es gibt zwei wichtige Ofen-Konzepte. Der persönliche Thermo-Ofen unterstützt die eigene Burg, Widerstand und die Fähigkeit zu kämpfen oder Gebiete einzunehmen. Der Unionsofen spendet Wärme für Burgen in der Umgebung und hilft der Union in kälteren Zonen.</li>
+<li>Kälteeinbruch ist die wiederkehrende Gefahr. Wenn Spieler ihren Ofen nicht bereit halten, können Burgen einfrieren und wichtige Aktionen verlieren.</li>
+<li>Eine eingefrorene Burg kann noch einige Dinge tun: Frost-Zombies töten, Ressourcen farmen, normale Zombies töten, Wagen plündern, manche Geheimdienstaufgaben erledigen, einige Tavernen-Plünderaufgaben machen, den Weltboss angreifen und umziehen.</li>
+<li>Eine eingefrorene Burg kann zentrale Aktionen nicht ausführen: Elite-Zombies bekämpfen, Rallys starten oder am Unionsboss teilnehmen. Deshalb sind Wärme und Ofendisziplin Pflicht.</li>
+<li>Die Platzierung des Unionsofens ist wichtig. Er sollte aktive Burgen und operative Zonen abdecken. Beim Vorrücken ist ein Platz nahe oder in nützlichen besetzten Städten oft stärker als ein Zufallsplatz.</li>
+<li>Besetzte Städte geben lokale Wärme. Frostminen geben keine Wärme. Die innere Karte ist kälter als die äußere; zu frühes Vorrücken nach innen kann beim Kälteeinbruch Probleme verursachen.</li>
+</ul></article>
+<article class="chapter" id="de-5-burgplatzierung-und-kontaminiertes-land"><a class="toplink" href="#top" title="Top">↑</a><h2>5. Burgplatzierung und kontaminiertes Land</h2><ul>
+<li>Burgen sollten normalerweise in der warmen Zone stehen, nahe bei der Unionsgruppe und innerhalb sinnvoller Reichweite des Unionsofens.</li>
+<li>Dunkles oder kontaminiertes Land um Minen und Städte sollte möglichst gemieden werden. Berichte deuten auf Einschränkungen und höheres Angriffsrisiko gegenüber normalem Land hin.</li>
+<li>Viele Unionen bleiben zu Beginn bei Level-1-Dörfern oder Level-2-Frostminenbereichen, weil die Temperatur dort leichter zu halten ist.</li>
+<li>Vor einem großen Umzug zuerst wichtige Spieler aufwärmen, Ofenabdeckung prüfen und schwächeren Spielern klar sagen, wo sie stehen sollen.</li>
+<li>Ein Umzug ist nicht nur eine Teleport-Entscheidung. Er betrifft Wärme, Rallys, Verteidigung, Ausdauer und Aktivität.</li>
+</ul></article>
+<article class="chapter" id="de-6-minen-stadte-und-eiskristalle"><a class="toplink" href="#top" title="Top">↑</a><h2>6. Minen, Städte und Eiskristalle</h2><ul>
+<li>Frostminen und Städte sind das Rückgrat der Wertung in Season 1. Erobern ist nützlich, aber Halten ist entscheidend für Eiskristallpunkte.</li>
+<li>Offizielle und communitybasierte Hinweise zeigen wiederholt: Der Eiskristallwert hängt davon ab, was die Union hält, nicht nur davon, was sie einmal eingenommen hat. Aufgeben kann Wert kosten.</li>
+<li>Die Grundkapazität für Frostminen wird häufig mit 3 angegeben. Jede zusätzliche Stadt oder jedes Dorf erhöht normalerweise die Minenkapazität; Level-6-Städte können mehr geben, oft +2.</li>
+<li>Stadt- und Minenlimits variieren je nach Heimserver und Cross-Server-Phase. Berichte nennen z. B. 4 Städte und 7 Minen auf dem Heimatserver sowie 4 Städte und höhere Minenlimits extern. Immer im Unionsstadt-Menü und aktuellen Event prüfen.</li>
+<li>Ersteroberungen können Unions-Beutekisten geben. Diese sollten durch die Führung fair verteilt werden. Vorher prüfen, ob ein Gebiet bereits eine Ersteroberungs-Markierung hatte.</li>
+<li>Wichtige Städte oder Minen nicht ohne Absprache aufgeben. Gebiet bedeutet Punkte, Zugang, Routenkontrolle, Wärmeplanung und Verhandlungsmacht.</li>
+</ul></article>
+<article class="chapter" id="de-7-routenplanung-und-fruhe-expansion"><a class="toplink" href="#top" title="Top">↑</a><h2>7. Routenplanung und frühe Expansion</h2><ul>
+<li>Vor Season-Start sollte keine perfekte Route festgezurrt werden, weil die Startposition oft erst mit Kartenöffnung klar wird.</li>
+<li>Nach dem Start muss die Union schnell eine Route festlegen. Der Weg sollte zu wertvollen Minen, nützlichen Städten und später zu Schlüsselgebieten führen.</li>
+<li>Wenn ein Frostminen-Boss zu stark ist, nicht den ganzen Tag verlieren. Auf eine niedrigere nahe Mine ausweichen und die Route in Bewegung halten.</li>
+<li>Frostminen müssen nicht immer numerisch erobert werden, aber sie müssen normalerweise an eigenes Land angrenzen. Diagonaler Kontakt reicht meist nicht; direkte Nachbarschaft zählt.</li>
+<li>Stadtlevel öffnen zeitgesteuert. Früh können Stadtdeklarationen häufiger möglich sein; später sind sie oft auf bestimmte Tage wie Mittwoch und Samstag beschränkt.</li>
+</ul></article>
+<article class="chapter" id="de-8-konigreichsexpedition-und-auenposten"><a class="toplink" href="#top" title="Top">↑</a><h2>8. Königreichsexpedition und Außenposten</h2><ul>
+<li>Die Königreichsexpedition öffnet die Cross-Server-Phase. R4/R5 setzen normalerweise Außenposten auf anderen Servern. Auf dem Heimatserver sind Außenposten normalerweise nicht möglich.</li>
+<li>Berichte widersprechen sich dazu, ob Außenposten bewegt werden können. Deshalb Standort als wichtig behandeln und vor dem Setzen die aktuelle Eventoberfläche prüfen.</li>
+<li>Nach dem Setzen eines Außenpostens ist die damit verbundene erste Mine oft der praktische Startpunkt. Danach folgt Expansion über angrenzendes Land.</li>
+<li>Sobald Expedition offen ist, kann oft kostenloses Umziehen über Expedition und Rückkehr genutzt werden. Ungeübte Spieler sollten das üben, um keine Teleports zu verschwenden.</li>
+<li>Nicht blind einfallen. Handel und Diplomatie mit anderen Servern sparen Truppen, weil Clash of Kingdoms und andere Events während Season 1 weiterlaufen.</li>
+<li>Jede Union kann eigene Ziele wählen, und mehrere Unionen können denselben Server bedrängen. Dadurch sind Diplomatie und Timing wertvoller als emotionale Angriffe.</li>
+</ul></article>
+<article class="chapter" id="de-9-diplomatie-kriegstage-und-ressourcenfelder"><a class="toplink" href="#top" title="Top">↑</a><h2>9. Diplomatie, Kriegstage und Ressourcenfelder</h2><ul>
+<li>Season 1 kann Truppenzahlen zerstören, wenn Burgen ohne Ziel angegriffen werden. Viele Server nutzen Absprachen, um unnötige Burgangriffe zu vermeiden und Soldaten zu erhalten.</li>
+<li>Koexistenz ist eine Strategie, keine Schwäche. Wenn Unionen Ziele tauschen, kurze Belohnungsfenster gewähren oder Burgen nicht brennen, kommen oft beide schneller voran.</li>
+<li>Ressourcenfelder unterscheiden sich von Burgen. Wenn kein Nichtangriffspakt besteht, können Gegner auf Ressourcenfeldern oft angegriffen oder vertrieben werden.</li>
+<li>Kriegstage brauchen klare Ansagen. Wenn gekämpft wird, dann mit Ziel und Timing. Wenn eine Absprache gilt, muss sie klar kommuniziert werden.</li>
+<li>Inaktive und Nichtkämpfer sollten Schildregeln kennen. Auch bei Absprachen können Fehler, Fremde oder Ressourcenfeldkonflikte passieren.</li>
+<li>Die Königsstadt kann während Season 1 im Clash of Kingdoms auf 0 °C fallen, ist aber keine dauerhafte Wärmequelle für das ganze Königreich.</li>
+</ul></article>
+<article class="chapter" id="de-10-klassenhalle-klassenskills-und-reset-strategie"><a class="toplink" href="#top" title="Top">↑</a><h2>10. Klassenhalle, Klassenskills und Reset-Strategie</h2><ul>
+<li>Klassenhalle und Klassenerfahrung sind wichtige Season-1-Systeme. Die Architekt-Klasse wird oft wegen Bau-, Forschungs- und Belagerungsnutzen diskutiert.</li>
+<li>Einige Skills erhöhen den Schaden an der Stadtmauer-Haltbarkeit während der Stadtbelagerung. Das zählt eher für Städte als für normale Monsterangriffe.</li>
+<li>Bei Skills wie Eilmarsch oder Belagerungsbanner gibt es gemischte Community-Tests. Nicht blind viele Punkte investieren, ohne das Verhalten auf dem eigenen Server zu beobachten.</li>
+<li>Level-15+-Skills wurden auf verschiedenen Servern zu unterschiedlichen Zeiten freigeschaltet. Gesperrte Reihen können Serverphase, Fehler oder verzögertes Freischalten bedeuten.</li>
+<li>Klassenskill-Reset kann strategisch genutzt werden. Normale Skills sollten nach Season 1 weiter nutzbar bleiben, während Season-Skills zurückerstattet werden oder verschwinden können.</li>
+<li>Gegen Ende von Season 1 kann es sinnvoll sein, Punkte aus temporären Season-Skills in langfristige normale Skills wie Forschung, Bauen und Ressourcenproduktion zu verschieben.</li>
+</ul></article>
+<article class="chapter" id="de-11-helden-season-boosts-crystal-und-level-tausch"><a class="toplink" href="#top" title="Top">↑</a><h2>11. Helden, Season-Boosts, Crystal und Level-Tausch</h2><ul>
+<li>Als Season-Boost-Helden wurden in Community-Material Crystal, Sera, Fenixia/Fenxia und Daphne genannt. Sie verdienen besondere Aufmerksamkeit bei Planung und Ressourcen.</li>
+<li>Crystal ist besonders wichtig für Free-to-play- und Low-Spend-Spieler. Eine 5-Sterne-Crystal kann in Season 1 zu einer goldenen S+ Version werden, aber spätere Sterne brauchen viele violette S+ Fragmente.</li>
+<li>Level-Tausch tauscht nur Helden-EXP-Level. Sterne, Aufstieg, Medaillen und Skill-Level werden nicht übertragen. Sinkt ein Held im Level, können Skills wieder gesperrt werden.</li>
+<li>Level-Tausch nicht voreilig auf einen neuen Goldhelden ohne Sterne nutzen. Ein hoher Level ohne Sterne kann trotzdem unbrauchbar sein. Besser zuerst Fragmente sammeln, dann tauschen, wenn der Zielheld einsatzbereit wird.</li>
+<li>Seras Bogen von Morgen ist exklusive Ausrüstung. Er ersetzt normale Ausrüstung nicht, sondern fügt zusätzliche Skills hinzu und kann Skill-Maximallevel erhöhen. Meist braucht er 5-Sterne-Sera und spezifische Bogenfragmente.</li>
+<li>Exklusive Ausrüstung kann teuer sein. Schwarzmarkt / Season-Festival können später langsamen Zugang geben, abhängig von Shop und Serverphase.</li>
+</ul></article>
+<article class="chapter" id="de-12-level-6-stadte-konigsstadt-und-endgame-timing"><a class="toplink" href="#top" title="Top">↑</a><h2>12. Level-6-Städte, Königsstadt und Endgame-Timing</h2><ul>
+<li>Level-6-Städte gehören zu den wichtigsten normalen Städten vor der Königsstadt. Sie können hohen Eiskristallwert geben und mit Zugang oder Einfluss auf die Königsstadt verbunden sein.</li>
+<li>Wenn Level-6-Städte bereits von stärkeren Unionen kontrolliert werden, ist Verhandlung oft realistischer als direkte Gewalt. Absprachen, kurze Haltefenster und koordinierte Belohnungen können zählen.</li>
+<li>Woche 7 gilt in vielen Berichten als entscheidende Endgame-Pushphase. Bis zu den letzten Tagen zu warten ist riskant, weil Schutzzeiten, Kartensperren oder Regeländerungen Rückeroberung verhindern können.</li>
+<li>Eine Level-6-Stadt spät zu verlieren und davon auszugehen, sie nach Season 1 zurückzuholen, ist gefährlich. Mehrere Serverberichte beschreiben Sperren nach der Season oder nach später Woche 7.</li>
+<li>Die Königsstadt gibt Autorität, Belohnungen, Titel oder Buffs, aber nicht zwingend Eiskristalle. Der königliche Ofen wärmt lokal, nicht dauerhaft das ganze Königreich.</li>
+<li>Das praktische Endgame-Ziel ist die beste realistische Kombination aus Fabriken, nützlichen Städten, Frostminen und Zugängen zu halten, ohne unnötig Truppen zu verlieren.</li>
+</ul></article>
+<article class="chapter" id="de-13-nach-season-1-und-schwarzmarkt"><a class="toplink" href="#top" title="Top">↑</a><h2>13. Nach Season 1 und Schwarzmarkt</h2><ul>
+<li>Nach Season 1 kann das Season-Festival / der Schwarzmarkt erscheinen. Das ist eine Offseason-Phase zur Erholung und Vorbereitung.</li>
+<li>Schwarzgoldmünzen, Bingo-Aufgaben und Shop-Rotationen können wichtig werden. Priorität haben langfristig nützliche Dinge: exklusive Fragmente, Dekorationen, Rahmen, Beschleunigungen, Heldenressourcen und limitierte Wertgegenstände.</li>
+<li>Einige saisonale Gebäude oder Kartenelemente können sichtbar oder funktional bleiben, während S1-spezifische Events wie Kälteeinbruch, Schätze oder Expedition enden.</li>
+<li>Regeln nach der Season unterschieden sich je nach Servergruppe. Nicht auf alte Rückeroberungsfenster vertrauen. Plane so, als wäre Woche 7 die letzte verlässliche Korrekturmöglichkeit.</li>
+</ul></article>
+<article class="chapter" id="de-14-tagliche-fuhrungs-checkliste"><a class="toplink" href="#top" title="Top">↑</a><h2>14. Tägliche Führungs-Checkliste</h2><ul>
+<li>Event-Kalender prüfen, bevor Befehle gegeben werden. Regeln können sich wöchentlich ändern.</li>
+<li>Ofenstatus, Kohle-/Goldspenden und Wärmeabdeckung aktiver Spieler prüfen.</li>
+<li>Sicherstellen, dass tägliche Minenversuche für die Route genutzt werden und nicht für isolierte Zufallsgebiete.</li>
+<li>Stadtdeklarationen koordinieren und versehentliche Drops vermeiden, besonders ab Saisonmitte.</li>
+<li>Diplomatie verfolgen: Wer hat Nichtangriffspakte, wer darf auf Ressourcenfeldern angegriffen werden, wer erhält kurze Belohnungsfenster.</li>
+<li>Spieler an kluge Ausdauerverteilung erinnern: Minen, Zombies, Arm Race, Skelette, Drachen, Nightfall-Wölfe/-Haie und weitere Events.</li>
+<li>Woche 7 vorbereiten, bevor sie da ist: Schlüsselstädte, Zugangsmine, Gegnerzeiten, Ofenplatzierung, Rally-Führer und Schildhinweise.</li>
+</ul></article>
+<article class="chapter" id="de-15-glossar-und-schlusszusammenfassung"><a class="toplink" href="#top" title="Top">↑</a><h2>15. Glossar und Schlusszusammenfassung</h2><ul>
+<li>Thermo-Ofen: persönlicher Ofen für Burgwärme und Widerstand.</li>
+<li>Unionsofen: Allianzofen, der Gebiet wärmt und Einsätze in kälteren Zonen ermöglicht.</li>
+<li>Kälteeinbruch: wiederkehrender Temperatursturz, der Burgen einfrieren kann.</li>
+<li>Frostmine: saisonales Minengebiet für Expansion, Belohnungen und Eiskristallwertung.</li>
+<li>Stadt: saisonales Gebiet wie Dorf, Herrenhaus, Fabrik, Stadt oder Level-6-Metropole/Bibliothek.</li>
+<li>Eiskristalle: zentrale Season-1-Wertungsressource, stark an gehaltenes Gebiet gebunden.</li>
+<li>Außenposten: Expeditionsstruktur zum Start der Cross-Server-Expansion.</li>
+<li>Ressourcenfeld: Sammelfeld; wird oft anders behandelt als Burgangriffe.</li>
+<li>Schlussfazit: Season 1 belohnt Unionen, die warm bleiben, Gebiete koordinieren, Ausdauer klug nutzen, sinnvolle Absprachen respektieren und Endgame-Positionen früh sichern.</li>
+</ul></article>
+</section><section class="lang-section" id="lang-es" data-lang="es">
+<div class="lang-title"><span>ES</span><h1>Español</h1></div>
+<div class="toc-card"><h2>Table of Contents / Inhaltsverzeichnis / Índice</h2><ol><li><a href="#es-1-proposito-y-jerarquia-de-fuentes">Propósito y jerarquía de fuentes</a></li><li><a href="#es-2-season-1-en-una-frase">Season 1 en una frase</a></li><li><a href="#es-3-preparacion-antes-de-entrar-en-la-temporada">Preparación antes de entrar en la temporada</a></li><li><a href="#es-4-calor-congelacion-y-hornos">Calor, congelación y hornos</a></li><li><a href="#es-5-colocacion-del-castillo-y-terreno-contaminado">Colocación del castillo y terreno contaminado</a></li><li><a href="#es-6-minas-ciudades-y-cristales-de-hielo">Minas, ciudades y cristales de hielo</a></li><li><a href="#es-7-planificacion-de-ruta-y-expansion-temprana">Planificación de ruta y expansión temprana</a></li><li><a href="#es-8-expedicion-del-reino-y-puestos-avanzados">Expedición del reino y puestos avanzados</a></li><li><a href="#es-9-diplomacia-dias-de-guerra-y-casillas-de-recursos">Diplomacia, días de guerra y casillas de recursos</a></li><li><a href="#es-10-sala-de-clases-habilidades-y-reinicio">Sala de clases, habilidades y reinicio</a></li><li><a href="#es-11-heroes-potenciadores-crystal-y-cambio-de-nivel">Héroes, potenciadores, Crystal y Cambio de nivel</a></li><li><a href="#es-12-ciudades-de-nivel-6-ciudad-real-y-final">Ciudades de nivel 6, Ciudad Real y final</a></li><li><a href="#es-13-despues-de-season-1-y-mercado-negro">Después de Season 1 y Mercado Negro</a></li><li><a href="#es-14-lista-diaria-para-liderazgo">Lista diaria para liderazgo</a></li><li><a href="#es-15-glosario-y-resumen-final">Glosario y resumen final</a></li></ol></div>
+<article class="chapter" id="es-1-proposito-y-jerarquia-de-fuentes"><a class="toplink" href="#top" title="Top">↑</a><h2>1. Propósito y jerarquía de fuentes</h2><ul>
+<li>Esta guía es una guía práctica de liderazgo de unión para X-Clash Season 1: Winter Is Coming / Polar Tempest. Sirve para cualquier unión y no está adaptada a un servidor concreto.</li>
+<li>Jerarquía de fuentes: el material oficial de X-Clash / Strawberry tiene la máxima autoridad; Animality / Pioneer Test Group es evidencia práctica fuerte; creadores de guías y jugadores experimentados son informes de campo útiles; comentarios aislados son pistas de menor seguridad.</li>
+<li>Si el calendario del evento, la hoja oficial o las reglas actuales del juego contradicen publicaciones antiguas de Discord, se debe seguir primero la información actual del juego.</li>
+<li>El objetivo no es explicar cada botón, sino dar a líderes y jugadores activos un orden útil de prioridades: calor, territorio, ruta, diplomacia, stamina, recompensas y seguridad del final de temporada.</li>
+</ul></article>
+<article class="chapter" id="es-2-season-1-en-una-frase"><a class="toplink" href="#top" title="Top">↑</a><h2>2. Season 1 en una frase</h2><ul>
+<li>Season 1 no es solo una temporada de combate. Es una temporada de logística, supervivencia y control territorial.</li>
+<li>Las uniones más fuertes no siempre son las que más atacan. Son las que mantienen a sus jugadores calientes, conservan minas y ciudades útiles, usan la stamina con eficiencia, respetan acuerdos útiles y preparan pronto las últimas semanas.</li>
+<li>El principio central es: mantenerse caliente, expandirse con propósito, conservar lo importante y no esperar a la última semana para corregir errores estratégicos.</li>
+</ul></article>
+<article class="chapter" id="es-3-preparacion-antes-de-entrar-en-la-temporada"><a class="toplink" href="#top" title="Top">↑</a><h2>3. Preparación antes de entrar en la temporada</h2><ul>
+<li>Enseña a los jugadores a colocar correctamente sus castillos. Season 1 requiere castillos compactos dentro de zonas cálidas; los castillos dispersos se congelan y pierden eficiencia.</li>
+<li>Los jugadores deben entender la mecánica de punto de reunión / teletransporte de unión. Una reubicación incorrecta puede hacer perder tiempo y cobertura de calor.</li>
+<li>Quita los equipos de la defensa de la muralla antes de fases peligrosas de guerra, salvo instrucción contraria: Muralla del castillo &gt; Defensa de ciudad &gt; desmarcar Unirse a la defensa en cada equipo. Dejar equipos en la muralla puede permitir que el enemigo drene tropas.</li>
+<li>Ahorra stamina. Minas heladas, zombis, monstruos, esqueletos, dragones, lobos/tiburones de Nightfall y eventos recurrentes compiten por la misma stamina.</li>
+<li>Guarda fragmentos morados de héroe S. Una Crystal de cinco estrellas puede promocionarse durante Season 1 a una versión dorada S+, pero subirla de nuevo puede ser costoso.</li>
+<li>Espera errores. Las mecánicas de Season 1 cambiaron entre grupos de servidores; revisa con frecuencia el calendario del evento y las reglas actuales.</li>
+</ul></article>
+<article class="chapter" id="es-4-calor-congelacion-y-hornos"><a class="toplink" href="#top" title="Top">↑</a><h2>4. Calor, congelación y hornos</h2><ul>
+<li>Hay dos conceptos de horno. El Horno térmico personal ayuda a tu propio castillo, resistencia y capacidad para luchar o conquistar. El Horno de unión da calor a castillos cercanos y permite operar en zonas más frías.</li>
+<li>La Ola de frío es el peligro recurrente. Si los jugadores no tienen el horno preparado, los castillos pueden congelarse y perder actividades importantes.</li>
+<li>Un castillo congelado todavía puede matar zombis helados, recolectar recursos, matar zombis normales, saquear carros, completar algunas misiones de inteligencia, hacer algunas tareas de saqueo de taberna, atacar al Jefe mundial y reubicarse.</li>
+<li>Un castillo congelado no puede hacer acciones clave como luchar contra zombis élite, iniciar rallies o participar en el Jefe de unión. Por eso la disciplina de calor y horno es obligatoria.</li>
+<li>La ubicación del Horno de unión importa. Debe cubrir castillos activos y zonas operativas importantes. Al avanzar hacia zonas más frías, colocarlo cerca o dentro de ciudades ocupadas útiles suele ser mejor que colocarlo al azar.</li>
+<li>Las ciudades ocupadas dan calor local. Las minas heladas no dan calor. El centro del mapa es más frío que el exterior, así que entrar demasiado pronto puede causar problemas durante la Ola de frío.</li>
+</ul></article>
+<article class="chapter" id="es-5-colocacion-del-castillo-y-terreno-contaminado"><a class="toplink" href="#top" title="Top">↑</a><h2>5. Colocación del castillo y terreno contaminado</h2><ul>
+<li>Los castillos deberían colocarse dentro de la zona cálida, cerca del grupo de la unión y dentro del alcance práctico del Horno de unión.</li>
+<li>Evita terreno oscuro o contaminado alrededor de minas y ciudades si es posible. Los informes indican restricciones y mayor riesgo de ataque en comparación con terreno normal.</li>
+<li>Al inicio, muchas uniones permanecen cerca de aldeas de nivel 1 o zonas de minas heladas de nivel 2 porque la temperatura es más manejable.</li>
+<li>Antes de mover a toda la unión, calienta primero a los jugadores clave, verifica la cobertura del horno y comunica a los jugadores más débiles dónde deben colocarse.</li>
+<li>Moverse no es solo una decisión de teletransporte. Es una decisión de calor, rally, defensa, stamina y actividad.</li>
+</ul></article>
+<article class="chapter" id="es-6-minas-ciudades-y-cristales-de-hielo"><a class="toplink" href="#top" title="Top">↑</a><h2>6. Minas, ciudades y cristales de hielo</h2><ul>
+<li>Las minas heladas y las ciudades son la base de puntuación de Season 1. Capturar ayuda, pero conservar es lo que cuenta para los cristales de hielo.</li>
+<li>Notas oficiales y de comunidad indican repetidamente que el valor de cristales depende de lo que la unión conserva, no solo de lo que capturó una vez. Abandonar territorio puede reducir valor.</li>
+<li>La capacidad base de minas heladas se reporta frecuentemente como 3. Cada ciudad o aldea adicional suele aumentar la capacidad; ciudades de nivel 6 pueden dar más, a menudo +2.</li>
+<li>Los límites de ciudades y minas varían según servidor local y fase cross-server. Se mencionan límites como 4 ciudades y 7 minas en servidor propio, y 4 ciudades con límites mayores de minas fuera. Verifica siempre en Ciudad de unión y reglas actuales.</li>
+<li>La primera captura puede dar cajas de botín de unión. Deben distribuirse de forma justa. Comprueba si la mina o ciudad ya tenía etiqueta de primera captura.</li>
+<li>No abandones ciudades o minas importantes sin coordinación. El territorio significa puntuación, acceso, control de ruta, planificación de calor y poder de negociación.</li>
+</ul></article>
+<article class="chapter" id="es-7-planificacion-de-ruta-y-expansion-temprana"><a class="toplink" href="#top" title="Top">↑</a><h2>7. Planificación de ruta y expansión temprana</h2><ul>
+<li>No cierres una ruta perfecta antes de abrir la temporada, porque la ubicación inicial puede no conocerse hasta que empiece el mapa.</li>
+<li>Cuando la unión aparece en el mapa, planifica rápido. La ruta debe llevar a minas valiosas, ciudades útiles y luego zonas clave.</li>
+<li>Si un jefe de mina helada es demasiado fuerte, no pierdas todo el día. Cambia a una mina cercana de menor nivel y mantén la expansión en movimiento.</li>
+<li>Las minas heladas no siempre deben capturarse por número, pero normalmente deben tocar territorio propio. El contacto diagonal suele no bastar; cuenta la adyacencia directa.</li>
+<li>Los niveles de ciudad se abren por tiempo. Al principio puede haber más declaraciones; más adelante suelen limitarse a días concretos como miércoles y sábado.</li>
+</ul></article>
+<article class="chapter" id="es-8-expedicion-del-reino-y-puestos-avanzados"><a class="toplink" href="#top" title="Top">↑</a><h2>8. Expedición del reino y puestos avanzados</h2><ul>
+<li>La Expedición del reino abre la fase cross-server. R4/R5 suelen colocar puestos avanzados en otros servidores. Normalmente no se pueden colocar en el servidor propio.</li>
+<li>Los informes difieren sobre si se pueden mover los puestos avanzados; trata la ubicación como una decisión importante y revisa la interfaz actual antes de colocarlo.</li>
+<li>Después de colocar un puesto avanzado, la primera mina conectada suele ser el punto práctico de inicio. Luego la expansión sigue por territorio adyacente.</li>
+<li>Cuando la Expedición está abierta, a menudo se puede usar reubicación gratuita entrando y volviendo correctamente. Los jugadores sin experiencia deberían practicar para no gastar teletransportes.</li>
+<li>No invadas a ciegas. El comercio y la diplomacia con otros servidores ahorran tropas, porque Clash of Kingdoms y otros eventos continúan durante Season 1.</li>
+<li>Cada unión puede elegir objetivo, y varias uniones pueden presionar el mismo servidor. Por eso la diplomacia y el timing valen más que ataques emocionales.</li>
+</ul></article>
+<article class="chapter" id="es-9-diplomacia-dias-de-guerra-y-casillas-de-recursos"><a class="toplink" href="#top" title="Top">↑</a><h2>9. Diplomacia, días de guerra y casillas de recursos</h2><ul>
+<li>Season 1 puede destruir tropas si se atacan castillos sin propósito. Muchos servidores usan acuerdos para evitar ataques innecesarios y conservar soldados.</li>
+<li>La coexistencia es estrategia, no debilidad. Si dos uniones intercambian objetivos, permiten ventanas cortas de recompensas o evitan quemar castillos, ambas pueden progresar más rápido.</li>
+<li>Las casillas de recursos son distintas de los castillos. Si no existe pacto de no agresión, los enemigos en casillas de recursos pueden ser atacados o expulsados.</li>
+<li>Los días de guerra necesitan instrucciones claras. Si se lucha, se lucha con objetivos y horario. Si se respeta un acuerdo, hay que comunicarlo.</li>
+<li>Inactivos y no combatientes deben conocer las expectativas de escudo. Incluso con acuerdos, puede haber errores, externos o conflictos por recursos.</li>
+<li>La Ciudad Real durante Season 1 puede llegar a 0 °C durante Clash of Kingdoms, pero no es una solución permanente de calor para todo el reino.</li>
+</ul></article>
+<article class="chapter" id="es-10-sala-de-clases-habilidades-y-reinicio"><a class="toplink" href="#top" title="Top">↑</a><h2>10. Sala de clases, habilidades y reinicio</h2><ul>
+<li>La Sala de clases y la experiencia de clase son sistemas importantes. La clase Arquitecto se discute por su utilidad en construcción, investigación y asedio.</li>
+<li>Algunas habilidades aumentan el daño a la durabilidad de la muralla de ciudad durante asedios. Importan más para ciudades que para golpes normales a monstruos.</li>
+<li>Habilidades como Marcha forzada o Estandarte de asedio tienen pruebas comunitarias mixtas. No inviertas mucho sin observar tu propio servidor.</li>
+<li>Las habilidades de nivel 15+ se desbloquearon en momentos distintos según servidor. Si una fila está bloqueada, puede ser fase del servidor, error o desbloqueo retrasado.</li>
+<li>El reinicio de habilidades de clase puede usarse estratégicamente. Las habilidades normales deberían seguir siendo útiles después de Season 1; las habilidades de temporada pueden reembolsarse o desaparecer.</li>
+<li>Cerca del final, considera mover puntos de habilidades temporales de temporada hacia habilidades normales de largo plazo como Investigación, Construcción y Producción de recursos.</li>
+</ul></article>
+<article class="chapter" id="es-11-heroes-potenciadores-crystal-y-cambio-de-nivel"><a class="toplink" href="#top" title="Top">↑</a><h2>11. Héroes, potenciadores, Crystal y Cambio de nivel</h2><ul>
+<li>Los héroes con potenciador de temporada mencionados incluyen Crystal, Sera, Fenixia/Fenxia y Daphne. Merecen atención especial en planificación y recursos.</li>
+<li>Crystal es especialmente importante para jugadores free-to-play o de bajo gasto. Una Crystal de cinco estrellas puede convertirse en versión dorada S+, pero las estrellas posteriores requieren muchos fragmentos morados S+.</li>
+<li>Cambio de nivel solo intercambia niveles de EXP. No transfiere estrellas, ascensión, medallas ni niveles de habilidad. Si un héroe baja de nivel, algunas habilidades pueden bloquearse de nuevo.</li>
+<li>No uses Cambio de nivel apresuradamente en un héroe dorado nuevo sin estrellas. Alto nivel sin estrellas puede seguir siendo débil. Mejor juntar fragmentos y cambiar cuando el objetivo esté listo.</li>
+<li>El Arco del Mañana de Sera es equipo exclusivo. No reemplaza el equipo normal; añade habilidades y puede aumentar niveles máximos. Suele requerir Sera de cinco estrellas y fragmentos específicos de arco.</li>
+<li>El equipo exclusivo puede ser caro. El Mercado Negro / Festival de temporada puede dar acceso más lento después, según tienda y fase del servidor.</li>
+</ul></article>
+<article class="chapter" id="es-12-ciudades-de-nivel-6-ciudad-real-y-final"><a class="toplink" href="#top" title="Top">↑</a><h2>12. Ciudades de nivel 6, Ciudad Real y final</h2><ul>
+<li>Las ciudades de nivel 6 son de las ciudades normales más importantes antes de la Ciudad Real. Pueden dar mucho valor de cristales y estar conectadas al acceso o influencia sobre la Ciudad Real.</li>
+<li>Si ciudades de nivel 6 ya están controladas por uniones fuertes, negociar puede ser más realista que usar fuerza directa. Acuerdos, ventanas cortas y recompensas coordinadas pueden importar.</li>
+<li>La semana 7 se trata como la fase decisiva de empuje final. Esperar a los últimos días es peligroso por protecciones, bloqueos de mapa o cambios de reglas.</li>
+<li>No pierdas una ciudad de nivel 6 tarde pensando que podrás recuperarla después. Varios servidores reportan ciudades y minas bloqueadas después de la temporada o después de la semana 7.</li>
+<li>La Ciudad Real da autoridad, recompensas, títulos o buffs, pero no necesariamente cristales de hielo. El Horno real calienta localmente, no todo el reino de forma permanente.</li>
+<li>El objetivo final práctico es conservar la mejor combinación realista de fábricas, ciudades útiles, minas heladas y accesos clave evitando pérdidas innecesarias.</li>
+</ul></article>
+<article class="chapter" id="es-13-despues-de-season-1-y-mercado-negro"><a class="toplink" href="#top" title="Top">↑</a><h2>13. Después de Season 1 y Mercado Negro</h2><ul>
+<li>Después de Season 1 puede aparecer el Festival de temporada / Mercado Negro. Es una fase de recuperación y preparación.</li>
+<li>Monedas de oro negro, misiones de bingo y rotaciones de tienda pueden ser importantes. Prioriza crecimiento a largo plazo: fragmentos exclusivos, decoraciones, marcos, aceleradores y recursos de héroe.</li>
+<li>Algunos edificios o elementos del mapa pueden permanecer visual o funcionalmente durante un tiempo, mientras eventos específicos como Ola de frío, tesoros o Expedición terminan.</li>
+<li>Las reglas tras la temporada cambiaron entre grupos de servidores. No asumas que antiguas ventanas de recuperación siguen activas. Planifica como si la semana 7 fuera la última oportunidad fiable.</li>
+</ul></article>
+<article class="chapter" id="es-14-lista-diaria-para-liderazgo"><a class="toplink" href="#top" title="Top">↑</a><h2>14. Lista diaria para liderazgo</h2><ul>
+<li>Revisar el calendario del evento antes de dar órdenes. Las reglas pueden cambiar por semana.</li>
+<li>Revisar estado del horno, donaciones de carbón/oro y cobertura de calor de jugadores activos.</li>
+<li>Confirmar que los intentos diarios de minas se usan en objetivos de ruta, no en territorio aislado.</li>
+<li>Coordinar declaraciones de ciudad y evitar abandonos accidentales, especialmente después de mitad de temporada.</li>
+<li>Controlar diplomacia: pactos de no agresión, casillas atacables, ventanas de recompensa acordadas.</li>
+<li>Recordar gasto inteligente de stamina entre minas, zombis, Arm Race, esqueletos, dragones, Nightfall y otros eventos.</li>
+<li>Preparar la semana 7: ciudades clave, minas de acceso, horarios enemigos, horno, líderes de rally y avisos de escudo.</li>
+</ul></article>
+<article class="chapter" id="es-15-glosario-y-resumen-final"><a class="toplink" href="#top" title="Top">↑</a><h2>15. Glosario y resumen final</h2><ul>
+<li>Horno térmico: horno personal para calor del castillo y resistencia.</li>
+<li>Horno de unión: horno de alianza que calienta la zona y permite operar en áreas frías.</li>
+<li>Ola de frío: caída recurrente de temperatura que puede congelar castillos.</li>
+<li>Mina helada: territorio estacional para expansión, recompensas y cristales de hielo.</li>
+<li>Ciudad: territorio estacional como aldea, mansión, fábrica, pueblo o metrópolis/biblioteca de nivel 6.</li>
+<li>Cristales de hielo: recurso central de puntuación, ligado al territorio mantenido.</li>
+<li>Puesto avanzado: estructura de Expedición para iniciar expansión cross-server.</li>
+<li>Casilla de recursos: campo de recolección, tratado de forma diferente a ataques de castillo.</li>
+<li>Resumen final: Season 1 recompensa a uniones que se mantienen calientes, coordinan territorio, usan stamina con inteligencia, respetan acuerdos útiles y aseguran posiciones finales a tiempo.</li>
+</ul></article>
+</section><section class="lang-section" id="lang-br" data-lang="br">
+<div class="lang-title"><span>BR</span><h1>Português (Brasil)</h1></div>
+<div class="toc-card"><h2>Table of Contents / Inhaltsverzeichnis / Índice</h2><ol><li><a href="#br-1-proposito-e-hierarquia-das-fontes">Propósito e hierarquia das fontes</a></li><li><a href="#br-2-temporada-1-em-uma-frase">Temporada 1 em uma frase</a></li><li><a href="#br-3-preparacao-antes-da-temporada">Preparação antes da temporada</a></li><li><a href="#br-4-calor-congelamento-e-fornalhas">Calor, congelamento e fornalhas</a></li><li><a href="#br-5-posicao-do-castelo-e-terreno-contaminado">Posição do castelo e terreno contaminado</a></li><li><a href="#br-6-minas-cidades-e-cristais-de-gelo">Minas, cidades e cristais de gelo</a></li><li><a href="#br-7-planejamento-de-rota-e-expansao-inicial">Planejamento de rota e expansão inicial</a></li><li><a href="#br-8-expedicao-do-reino-e-postos-avancados">Expedição do Reino e postos avançados</a></li><li><a href="#br-9-diplomacia-dias-de-guerra-e-tiles">Diplomacia, dias de guerra e tiles</a></li><li><a href="#br-10-salao-de-classes-habilidades-e-reset">Salão de Classes, habilidades e reset</a></li><li><a href="#br-11-herois-bonus-de-temporada-crystal-e-troca-de-nivel">Heróis, bônus de temporada, Crystal e Troca de Nível</a></li><li><a href="#br-12-cidades-nivel-6-cidade-real-e-final-de-temporada">Cidades nível 6, Cidade Real e final de temporada</a></li><li><a href="#br-13-apos-a-temporada-1-e-mercado-negro">Após a Temporada 1 e Mercado Negro</a></li><li><a href="#br-14-checklist-diario-da-lideranca">Checklist diário da liderança</a></li><li><a href="#br-15-glossario-e-resumo-final">Glossário e resumo final</a></li></ol></div>
+<article class="chapter" id="br-1-proposito-e-hierarquia-das-fontes"><a class="toplink" href="#top" title="Top">↑</a><h2>1. Propósito e hierarquia das fontes</h2><ul>
+<li>Este guia é um guia prático de liderança para X-Clash Temporada 1: Winter Is Coming / Polar Tempest. Ele serve para qualquer união e não é adaptado a um servidor específico.</li>
+<li>Hierarquia das fontes: material oficial de X-Clash / Strawberry tem a maior autoridade; Animality / Pioneer Test Group é forte evidência prática; criadores de guias e jogadores experientes são relatos úteis de campo; comentários isolados são pistas de menor confiança.</li>
+<li>Se o calendário do evento, a planilha oficial ou as regras atuais do jogo contradizem posts antigos do Discord, siga primeiro a informação atual dentro do jogo.</li>
+<li>O objetivo não é explicar cada botão, mas dar a líderes e jogadores ativos uma ordem útil de prioridades: calor, território, rota, diplomacia, stamina, recompensas e segurança no fim da temporada.</li>
+</ul></article>
+<article class="chapter" id="br-2-temporada-1-em-uma-frase"><a class="toplink" href="#top" title="Top">↑</a><h2>2. Temporada 1 em uma frase</h2><ul>
+<li>A Temporada 1 não é apenas uma temporada de combate. É uma temporada de logística, sobrevivência e controle territorial.</li>
+<li>As uniões mais fortes não são sempre as que mais atacam. São as que mantêm jogadores aquecidos, seguram minas e cidades úteis, usam stamina com eficiência, respeitam acordos úteis e preparam as semanas finais cedo.</li>
+<li>O princípio central é: ficar aquecido, expandir com propósito, segurar o que importa e não esperar a última semana para corrigir erros estratégicos.</li>
+</ul></article>
+<article class="chapter" id="br-3-preparacao-antes-da-temporada"><a class="toplink" href="#top" title="Top">↑</a><h2>3. Preparação antes da temporada</h2><ul>
+<li>Ensine os jogadores a posicionar seus castelos corretamente. A Temporada 1 exige castelos juntos dentro de zonas quentes; castelos espalhados congelam e perdem eficiência.</li>
+<li>Garanta que os jogadores entendam o ponto de rally / teleporte da união. Um deslocamento errado custa tempo e pode quebrar a cobertura de calor.</li>
+<li>Remova equipes da defesa da muralha antes de fases perigosas de guerra, salvo ordem contrária: Muralha do Castelo &gt; Defesa da Cidade &gt; desmarcar Entrar na defesa em cada equipe. Equipes na muralha podem permitir que inimigos drenem tropas.</li>
+<li>Guarde stamina. Minas de gelo, zumbis, monstros, esqueletos, dragões, lobos/tubarões Nightfall e eventos recorrentes disputam a mesma stamina.</li>
+<li>Guarde fragmentos roxos de herói S. Uma Crystal de 5 estrelas pode ser promovida durante a Temporada 1 para uma versão dourada S+, mas evoluir estrelas depois pode ficar caro.</li>
+<li>Espere bugs. Mecânicas da Temporada 1 mudaram entre grupos de servidores; calendário do evento e regras ao vivo devem ser verificados sempre.</li>
+</ul></article>
+<article class="chapter" id="br-4-calor-congelamento-e-fornalhas"><a class="toplink" href="#top" title="Top">↑</a><h2>4. Calor, congelamento e fornalhas</h2><ul>
+<li>Existem duas fornalhas importantes. A Fornalha Térmica pessoal ajuda o próprio castelo, resistência e capacidade de lutar ou conquistar. A Fornalha da União fornece calor aos castelos próximos e permite operar em áreas frias.</li>
+<li>A Onda de Frio é o perigo recorrente. Sem a fornalha pronta, castelos podem congelar e perder atividades importantes.</li>
+<li>Um castelo congelado ainda pode matar Zumbis de Gelo, coletar recursos, matar zumbis normais, saquear carroças, fazer algumas missões de inteligência, algumas tarefas da taverna, atacar o Chefe Mundial e se realocar.</li>
+<li>Um castelo congelado não pode fazer ações-chave como lutar contra Zumbis Elite, iniciar rallies ou participar do Chefe da União. Por isso calor e disciplina de fornalha são obrigatórios.</li>
+<li>A posição da Fornalha da União importa. Ela deve cobrir castelos ativos e áreas operacionais. Ao avançar para zonas frias, colocá-la perto ou dentro de cidades ocupadas úteis costuma ser melhor que colocar aleatoriamente.</li>
+<li>Cidades ocupadas dão calor local. Minas de Gelo não dão calor. O centro do mapa é mais frio que a borda, então entrar cedo demais pode causar problemas durante a Onda de Frio.</li>
+</ul></article>
+<article class="chapter" id="br-5-posicao-do-castelo-e-terreno-contaminado"><a class="toplink" href="#top" title="Top">↑</a><h2>5. Posição do castelo e terreno contaminado</h2><ul>
+<li>Castelos devem ficar dentro da área quente, perto do grupo da união e ao alcance prático da Fornalha da União.</li>
+<li>Evite terreno escuro ou contaminado ao redor de minas e cidades quando possível. Relatos indicam restrições e maior risco de ataque em comparação com terreno normal.</li>
+<li>No começo, muitas uniões ficam perto de aldeias nível 1 ou áreas de minas de gelo nível 2 porque a temperatura é mais fácil de controlar.</li>
+<li>Antes de mover a união inteira, aqueça jogadores-chave, confira cobertura da fornalha e diga claramente aos jogadores menores onde estacionar.</li>
+<li>Mover não é só decisão de teleporte. É decisão de calor, rally, defesa, stamina e atividade.</li>
+</ul></article>
+<article class="chapter" id="br-6-minas-cidades-e-cristais-de-gelo"><a class="toplink" href="#top" title="Top">↑</a><h2>6. Minas, cidades e cristais de gelo</h2><ul>
+<li>Minas de Gelo e cidades são a base de pontuação da Temporada 1. Capturar ajuda, mas segurar é o que conta para cristais de gelo.</li>
+<li>Notas oficiais e da comunidade indicam que o valor dos cristais depende do que a união segura, não apenas do que capturou uma vez. Abandonar território pode reduzir valor.</li>
+<li>A capacidade base de Minas de Gelo é frequentemente relatada como 3. Cada cidade ou aldeia adicional costuma aumentar a capacidade; cidades nível 6 podem dar mais, muitas vezes +2.</li>
+<li>Limites de cidades e minas variam por servidor de origem e fase cross-server. Relatos citam 4 cidades e 7 minas no servidor próprio e 4 cidades com limite maior de minas fora. Verifique sempre no menu Cidade da União e nas regras atuais.</li>
+<li>Primeira captura pode dar caixas de saque da união. A liderança deve distribuir de forma justa. Verifique se a mina ou cidade já tinha marca de primeira captura.</li>
+<li>Não abandone cidades ou minas importantes sem coordenação. Território é pontuação, acesso, controle de rota, planejamento de calor e força de negociação.</li>
+</ul></article>
+<article class="chapter" id="br-7-planejamento-de-rota-e-expansao-inicial"><a class="toplink" href="#top" title="Top">↑</a><h2>7. Planejamento de rota e expansão inicial</h2><ul>
+<li>Não prenda uma rota perfeita antes da temporada abrir, pois a posição inicial pode só ficar clara quando o mapa começar.</li>
+<li>Assim que a união aparece no mapa, planeje rapidamente. A rota deve levar a minas valiosas, cidades úteis e depois áreas-chave.</li>
+<li>Se um chefe de Mina de Gelo for forte demais, não perca o dia todo. Mude para uma mina próxima de nível menor e mantenha a expansão andando.</li>
+<li>Minas de Gelo nem sempre precisam ser capturadas por ordem numérica, mas normalmente precisam tocar território próprio. Contato diagonal geralmente não basta; adjacência direta importa.</li>
+<li>Níveis de cidades abrem por tempo. No começo pode haver mais declarações; mais tarde elas podem ficar limitadas a dias como quarta e sábado.</li>
+</ul></article>
+<article class="chapter" id="br-8-expedicao-do-reino-e-postos-avancados"><a class="toplink" href="#top" title="Top">↑</a><h2>8. Expedição do Reino e postos avançados</h2><ul>
+<li>A Expedição do Reino abre a fase cross-server. R4/R5 geralmente colocam postos avançados em outros servidores. Normalmente não se colocam postos no servidor próprio.</li>
+<li>Relatos divergem sobre mover postos avançados; trate a posição como importante e confira a interface atual antes de confirmar.</li>
+<li>Depois de colocar o posto, a primeira mina conectada costuma ser o ponto prático inicial. Depois a expansão segue por território adjacente.</li>
+<li>Quando a Expedição está aberta, muitas vezes é possível usar realocação grátis entrando e voltando corretamente. Jogadores inexperientes devem praticar para não gastar teleportes.</li>
+<li>Não invada às cegas. Trocas e diplomacia com outros servidores poupam tropas, pois Clash of Kingdoms e outros eventos continuam durante a Temporada 1.</li>
+<li>Cada união pode escolher seu alvo, e várias uniões podem pressionar o mesmo servidor. Diplomacia e timing valem mais que ataques emocionais.</li>
+</ul></article>
+<article class="chapter" id="br-9-diplomacia-dias-de-guerra-e-tiles"><a class="toplink" href="#top" title="Top">↑</a><h2>9. Diplomacia, dias de guerra e tiles</h2><ul>
+<li>A Temporada 1 pode destruir tropas se castelos forem atacados sem propósito. Muitos servidores usam acordos para evitar ataques inúteis e preservar soldados.</li>
+<li>Coexistência é estratégia, não fraqueza. Se uniões trocam objetivos, dão janelas curtas de recompensa ou evitam queimar castelos, ambas podem avançar melhor.</li>
+<li>Tiles de recursos são diferentes de castelos. Se não houver pacto de não agressão, inimigos em tiles de recursos podem ser atacados ou expulsos.</li>
+<li>Dias de guerra exigem instruções claras. Se a união luta, luta com alvo e horário. Se respeita acordo, isso precisa ser comunicado.</li>
+<li>Inativos e não combatentes devem saber quando usar escudo. Mesmo com acordos, erros, terceiros ou conflitos de tiles podem acontecer.</li>
+<li>A Cidade Real durante a Temporada 1 pode chegar a 0 °C no Clash of Kingdoms, mas não é solução permanente de calor para todo o reino.</li>
+</ul></article>
+<article class="chapter" id="br-10-salao-de-classes-habilidades-e-reset"><a class="toplink" href="#top" title="Top">↑</a><h2>10. Salão de Classes, habilidades e reset</h2><ul>
+<li>Salão de Classes e EXP de Classe são sistemas importantes. A classe Arquiteto é discutida por construção, pesquisa e utilidade em cerco.</li>
+<li>Algumas habilidades aumentam o dano à durabilidade da muralha da cidade durante cerco. Isso importa mais para cidades que para monstros comuns.</li>
+<li>Habilidades como Marcha Forçada ou Estandarte de Cerco têm testes comunitários mistos. Não invista pesado sem observar seu servidor.</li>
+<li>Habilidades nível 15+ abriram em momentos diferentes por servidor. Linha bloqueada pode ser estágio do servidor, bug ou liberação atrasada.</li>
+<li>Reset de habilidades de classe pode ser estratégico. Habilidades normais devem continuar úteis após a Temporada 1; habilidades de temporada podem ser reembolsadas ou desaparecer.</li>
+<li>Perto do fim, considere mover pontos de habilidades temporárias para habilidades normais de longo prazo como Pesquisa, Construção e Produção de recursos.</li>
+</ul></article>
+<article class="chapter" id="br-11-herois-bonus-de-temporada-crystal-e-troca-de-nivel"><a class="toplink" href="#top" title="Top">↑</a><h2>11. Heróis, bônus de temporada, Crystal e Troca de Nível</h2><ul>
+<li>Heróis com bônus de temporada citados incluem Crystal, Sera, Fenixia/Fenxia e Daphne. Eles merecem atenção especial em planejamento e recursos.</li>
+<li>Crystal é importante para free-to-play e low spend. Uma Crystal 5 estrelas pode virar versão dourada S+, mas estrelas posteriores exigem muitos fragmentos roxos S+.</li>
+<li>Troca de Nível troca apenas níveis de EXP. Não transfere estrelas, ascensão, medalhas ou níveis de habilidade. Se um herói cair de nível, habilidades podem bloquear novamente.</li>
+<li>Não use Troca de Nível cedo demais em herói dourado sem estrelas. Alto nível sem estrelas pode ser fraco. Melhor juntar fragmentos e trocar quando o alvo ficar pronto.</li>
+<li>O Arco do Amanhã da Sera é equipamento exclusivo. Não substitui equipamento normal; adiciona habilidades e pode aumentar níveis máximos. Normalmente exige Sera 5 estrelas e fragmentos específicos do arco.</li>
+<li>Equipamento exclusivo pode ser caro. Mercado Negro / Festival da Temporada pode dar acesso mais lento depois, dependendo da loja e fase do servidor.</li>
+</ul></article>
+<article class="chapter" id="br-12-cidades-nivel-6-cidade-real-e-final-de-temporada"><a class="toplink" href="#top" title="Top">↑</a><h2>12. Cidades nível 6, Cidade Real e final de temporada</h2><ul>
+<li>Cidades nível 6 são das cidades normais mais importantes antes da Cidade Real. Podem dar muitos cristais e estar ligadas ao acesso ou influência na Cidade Real.</li>
+<li>Se cidades nível 6 já estão com uniões fortes, negociação pode ser mais realista que força direta. Acordos, janelas curtas e recompensas coordenadas importam.</li>
+<li>A semana 7 é tratada como fase decisiva de empurrão final. Esperar os últimos dias é perigoso por proteções, bloqueios de mapa ou mudanças de regras.</li>
+<li>Não perca uma cidade nível 6 tarde achando que recupera depois. Vários servidores relatam cidades e minas bloqueadas após a temporada ou após semana 7.</li>
+<li>A Cidade Real dá autoridade, recompensas, títulos ou buffs, mas não necessariamente cristais. A Fornalha Real aquece localmente, não o reino inteiro.</li>
+<li>O objetivo final prático é segurar a melhor combinação realista de fábricas, cidades úteis, Minas de Gelo e acessos-chave, evitando perdas inúteis.</li>
+</ul></article>
+<article class="chapter" id="br-13-apos-a-temporada-1-e-mercado-negro"><a class="toplink" href="#top" title="Top">↑</a><h2>13. Após a Temporada 1 e Mercado Negro</h2><ul>
+<li>Após a Temporada 1 pode surgir Festival da Temporada / Mercado Negro. É fase de recuperação e preparação.</li>
+<li>Moedas de Ouro Negro, missões de bingo e rotação de loja podem ser importantes. Priorize crescimento longo: fragmentos exclusivos, decorações, molduras, aceleradores e recursos de herói.</li>
+<li>Alguns prédios ou elementos de mapa podem continuar visíveis ou funcionais por um tempo, enquanto eventos específicos como Onda de Frio, tesouros ou Expedição terminam.</li>
+<li>Regras pós-temporada mudaram entre servidores. Não assuma que antigas janelas de reconquista funcionam. Planeje como se a semana 7 fosse a última chance confiável.</li>
+</ul></article>
+<article class="chapter" id="br-14-checklist-diario-da-lideranca"><a class="toplink" href="#top" title="Top">↑</a><h2>14. Checklist diário da liderança</h2><ul>
+<li>Verificar calendário do evento antes de dar ordens. Regras podem mudar por semana.</li>
+<li>Verificar fornalha, doações de carvão/ouro e cobertura de calor dos ativos.</li>
+<li>Confirmar que tentativas diárias de minas seguem a rota, não territórios isolados.</li>
+<li>Coordenar declarações de cidades e evitar abandonos acidentais, principalmente após metade da temporada.</li>
+<li>Controlar diplomacia: pactos de não agressão, tiles atacáveis e janelas de recompensa.</li>
+<li>Lembrar uso inteligente de stamina entre minas, zumbis, Arm Race, esqueletos, dragões, Nightfall e outros eventos.</li>
+<li>Preparar semana 7: cidades-chave, minas de acesso, horários inimigos, fornalha, líderes de rally e lembretes de escudo.</li>
+</ul></article>
+<article class="chapter" id="br-15-glossario-e-resumo-final"><a class="toplink" href="#top" title="Top">↑</a><h2>15. Glossário e resumo final</h2><ul>
+<li>Fornalha Térmica: fornalha pessoal para calor do castelo e resistência.</li>
+<li>Fornalha da União: fornalha da aliança que aquece a área e permite operar em zonas frias.</li>
+<li>Onda de Frio: queda recorrente de temperatura que pode congelar castelos.</li>
+<li>Mina de Gelo: território sazonal para expansão, recompensas e cristais.</li>
+<li>Cidade: território sazonal como aldeia, mansão, fábrica, cidade ou metrópole/biblioteca nível 6.</li>
+<li>Cristais de Gelo: recurso central de pontuação ligado ao território mantido.</li>
+<li>Posto avançado: estrutura da Expedição para iniciar expansão cross-server.</li>
+<li>Tile: campo de coleta, normalmente tratado diferente de ataques a castelo.</li>
+<li>Resumo final: a Temporada 1 recompensa uniões que ficam aquecidas, coordenam território, usam stamina bem, respeitam acordos úteis e seguram posições finais cedo.</li>
+</ul></article>
+</section><section class="lang-section" id="lang-fr" data-lang="fr">
+<div class="lang-title"><span>FR</span><h1>Français</h1></div>
+<div class="toc-card"><h2>Table of Contents / Inhaltsverzeichnis / Índice</h2><ol><li><a href="#fr-1-objectif-et-hierarchie-des-sources">Objectif et hiérarchie des sources</a></li><li><a href="#fr-2-la-saison-1-en-une-phrase">La Saison 1 en une phrase</a></li><li><a href="#fr-3-preparation-avant-la-saison">Préparation avant la saison</a></li><li><a href="#fr-4-chaleur-gel-et-fourneaux">Chaleur, gel et fourneaux</a></li><li><a href="#fr-5-placement-des-chateaux-et-terrain-contamine">Placement des châteaux et terrain contaminé</a></li><li><a href="#fr-6-mines-villes-et-cristaux-de-glace">Mines, villes et cristaux de glace</a></li><li><a href="#fr-7-route-et-expansion-precoce">Route et expansion précoce</a></li><li><a href="#fr-8-expedition-du-royaume-et-avant-postes">Expédition du Royaume et avant-postes</a></li><li><a href="#fr-9-diplomatie-jours-de-guerre-et-cases-de-ressources">Diplomatie, jours de guerre et cases de ressources</a></li><li><a href="#fr-10-salle-de-classe-competences-et-reinitialisation">Salle de classe, compétences et réinitialisation</a></li><li><a href="#fr-11-heros-bonus-de-saison-crystal-et-echange-de-niveau">Héros, bonus de saison, Crystal et échange de niveau</a></li><li><a href="#fr-12-villes-niveau-6-ville-royale-et-fin-de-saison">Villes niveau 6, Ville royale et fin de saison</a></li><li><a href="#fr-13-apres-la-saison-1-et-marche-noir">Après la Saison 1 et Marché noir</a></li><li><a href="#fr-14-liste-quotidienne-du-leadership">Liste quotidienne du leadership</a></li><li><a href="#fr-15-glossaire-et-resume-final">Glossaire et résumé final</a></li></ol></div>
+<article class="chapter" id="fr-1-objectif-et-hierarchie-des-sources"><a class="toplink" href="#top" title="Top">↑</a><h2>1. Objectif et hiérarchie des sources</h2><ul>
+<li>Ce guide est un guide pratique de leadership pour X-Clash Saison 1: Winter Is Coming / Polar Tempest. Il peut être utilisé par toute union et n’est pas lié à un serveur précis.</li>
+<li>Hiérarchie des sources : les informations officielles X-Clash / Strawberry sont prioritaires; Animality / Pioneer Test Group est une preuve pratique forte; les créateurs de guides et joueurs expérimentés sont des retours utiles; les commentaires isolés restent des indices moins sûrs.</li>
+<li>Si le calendrier d’événement, le tableau officiel ou les règles en jeu contredisent d’anciens messages Discord, suivez toujours d’abord l’information actuelle en jeu.</li>
+<li>L’objectif est de donner un ordre de priorités utile : chaleur, territoire, route, diplomatie, endurance, récompenses et sécurité de fin de saison.</li>
+</ul></article>
+<article class="chapter" id="fr-2-la-saison-1-en-une-phrase"><a class="toplink" href="#top" title="Top">↑</a><h2>2. La Saison 1 en une phrase</h2><ul>
+<li>La Saison 1 n’est pas seulement une saison de combat. C’est une saison de logistique, survie et contrôle territorial.</li>
+<li>Les meilleures unions ne sont pas forcément celles qui attaquent le plus, mais celles qui gardent leurs joueurs au chaud, tiennent mines et villes utiles, dépensent l’endurance intelligemment, respectent les accords utiles et préparent tôt la fin de saison.</li>
+<li>Principe central : rester au chaud, s’étendre avec un but, garder ce qui compte et ne pas attendre la dernière semaine pour corriger les erreurs.</li>
+</ul></article>
+<article class="chapter" id="fr-3-preparation-avant-la-saison"><a class="toplink" href="#top" title="Top">↑</a><h2>3. Préparation avant la saison</h2><ul>
+<li>Apprenez aux joueurs à placer correctement leur château dans les zones chaudes. Les châteaux dispersés gèlent plus vite et deviennent inefficaces.</li>
+<li>Les joueurs doivent comprendre le point de ralliement et le téléport d’union. Un déplacement mal fait coûte du temps et peut casser la couverture de chaleur.</li>
+<li>Retirez les équipes de la défense du mur avant les phases dangereuses, sauf ordre contraire : Mur du château &gt; Défense de ville &gt; décocher Rejoindre la défense. Sinon l’ennemi peut drainer les troupes.</li>
+<li>Économisez l’endurance. Mines gelées, zombies, monstres, squelettes, dragons, loups/requins Nightfall et événements récurrents utilisent tous cette ressource.</li>
+<li>Gardez les fragments violets de héros S. Crystal 5 étoiles peut devenir une version dorée S+ pendant la Saison 1, mais les étoiles suivantes coûtent cher.</li>
+<li>Attendez-vous à des bugs. Les règles ont changé selon les groupes de serveurs; vérifiez souvent le calendrier et les règles actuelles.</li>
+</ul></article>
+<article class="chapter" id="fr-4-chaleur-gel-et-fourneaux"><a class="toplink" href="#top" title="Top">↑</a><h2>4. Chaleur, gel et fourneaux</h2><ul>
+<li>Il existe deux fourneaux importants. Le Fourneau thermique personnel soutient votre château, la résistance et la capacité à combattre ou conquérir. Le Fourneau d’union chauffe les châteaux proches et aide l’union en zones froides.</li>
+<li>Le Coup de froid est le danger récurrent. Sans fourneau prêt, les châteaux peuvent geler et perdre des activités importantes.</li>
+<li>Un château gelé peut encore tuer des zombies gelés, récolter, tuer des zombies normaux, piller des chariots, faire certaines missions d’intelligence, certaines tâches de taverne, attaquer le Boss mondial et se déplacer.</li>
+<li>Un château gelé ne peut pas combattre les zombies élite, lancer des ralliements ou participer au Boss d’union. La discipline de chaleur est donc obligatoire.</li>
+<li>Le placement du Fourneau d’union est crucial : il doit couvrir les joueurs actifs et les zones utiles. En avançant, le placer près ou dans une ville occupée utile est souvent meilleur.</li>
+<li>Les villes occupées donnent de la chaleur locale. Les mines gelées ne donnent pas de chaleur. Le centre de la carte est plus froid que l’extérieur.</li>
+</ul></article>
+<article class="chapter" id="fr-5-placement-des-chateaux-et-terrain-contamine"><a class="toplink" href="#top" title="Top">↑</a><h2>5. Placement des châteaux et terrain contaminé</h2><ul>
+<li>Placez les châteaux dans la zone chaude, près du groupe et à portée pratique du Fourneau d’union.</li>
+<li>Évitez le terrain sombre ou contaminé autour des mines et villes si possible; il peut apporter des restrictions et plus de risque.</li>
+<li>Au début, beaucoup d’unions restent près des villages niveau 1 ou mines gelées niveau 2 car la température est plus facile à gérer.</li>
+<li>Avant un grand déplacement, chauffez les joueurs clés, vérifiez la couverture du fourneau et indiquez aux plus faibles où se placer.</li>
+<li>Un déplacement n’est pas seulement un téléport : c’est une décision de chaleur, ralliement, défense, endurance et activité.</li>
+</ul></article>
+<article class="chapter" id="fr-6-mines-villes-et-cristaux-de-glace"><a class="toplink" href="#top" title="Top">↑</a><h2>6. Mines, villes et cristaux de glace</h2><ul>
+<li>Les mines gelées et villes sont la base du score. Capturer aide, mais tenir compte pour les cristaux de glace.</li>
+<li>Les notes officielles et communautaires indiquent que la valeur dépend de ce que l’union détient, pas seulement de ce qu’elle a capturé. Abandonner peut réduire la valeur.</li>
+<li>La capacité de base des mines gelées est souvent 3. Chaque ville ou village ajoute souvent de la capacité; une ville niveau 6 peut donner davantage, souvent +2.</li>
+<li>Les limites varient selon serveur d’origine et phase inter-serveurs. Vérifiez toujours le menu Ville d’union et les règles actuelles.</li>
+<li>La première capture peut donner des coffres d’union; ils doivent être distribués équitablement. Vérifiez le tag de première capture.</li>
+<li>N’abandonnez pas mines ou villes importantes sans coordination. Le territoire donne score, accès, route, chaleur et pouvoir de négociation.</li>
+</ul></article>
+<article class="chapter" id="fr-7-route-et-expansion-precoce"><a class="toplink" href="#top" title="Top">↑</a><h2>7. Route et expansion précoce</h2><ul>
+<li>Ne bloquez pas une route parfaite avant l’ouverture, car le point de départ peut être inconnu.</li>
+<li>Après l’apparition sur la carte, choisissez vite une route vers mines précieuses, villes utiles et zones clés.</li>
+<li>Si un boss de mine gelée est trop fort, ne perdez pas la journée; pivotez vers une mine proche plus basse.</li>
+<li>Les mines ne doivent pas toujours être prises par ordre numérique, mais elles doivent généralement toucher votre territoire; la diagonale ne suffit pas.</li>
+<li>Les villes s’ouvrent par paliers de temps. Plus tard, les déclarations peuvent être limitées à mercredi et samedi.</li>
+</ul></article>
+<article class="chapter" id="fr-8-expedition-du-royaume-et-avant-postes"><a class="toplink" href="#top" title="Top">↑</a><h2>8. Expédition du Royaume et avant-postes</h2><ul>
+<li>L’Expédition du Royaume ouvre la phase inter-serveurs. Les R4/R5 placent les avant-postes sur d’autres serveurs; normalement pas sur le serveur d’origine.</li>
+<li>Les retours divergent sur le déplacement des avant-postes; considérez donc le placement comme important et vérifiez l’interface.</li>
+<li>Après placement, la première mine reliée sert souvent de départ pratique, puis l’expansion suit les terres adjacentes.</li>
+<li>L’Expédition permet souvent une relocalisation gratuite si elle est utilisée correctement; les joueurs inexpérimentés doivent s’entraîner.</li>
+<li>N’envahissez pas aveuglément. Commerce et diplomatie économisent des troupes, car Clash of Kingdoms et autres événements continuent.</li>
+<li>Chaque union peut choisir sa cible et plusieurs unions peuvent viser le même serveur; timing et diplomatie valent plus que la colère.</li>
+</ul></article>
+<article class="chapter" id="fr-9-diplomatie-jours-de-guerre-et-cases-de-ressources"><a class="toplink" href="#top" title="Top">↑</a><h2>9. Diplomatie, jours de guerre et cases de ressources</h2><ul>
+<li>La Saison 1 peut détruire les troupes si les châteaux sont attaqués sans but. Beaucoup de serveurs évitent ces attaques par accord.</li>
+<li>La coexistence est une stratégie. Échanger des objectifs, donner de courtes fenêtres de récompense ou éviter de brûler les châteaux peut aider les deux camps.</li>
+<li>Les cases de ressources sont différentes des châteaux. Sans pacte de non-agression, les ennemis sur ressources peuvent souvent être chassés.</li>
+<li>Les jours de guerre exigent des ordres clairs : si l’on combat, on combat avec cible et horaire; si un accord existe, on le communique.</li>
+<li>Les inactifs et non-combattants doivent connaître les attentes de bouclier; les erreurs et conflits de ressources arrivent.</li>
+<li>La Ville royale peut être à 0 °C pendant Clash of Kingdoms, mais ce n’est pas une solution de chaleur permanente pour tout le royaume.</li>
+</ul></article>
+<article class="chapter" id="fr-10-salle-de-classe-competences-et-reinitialisation"><a class="toplink" href="#top" title="Top">↑</a><h2>10. Salle de classe, compétences et réinitialisation</h2><ul>
+<li>La Salle de classe et l’expérience de classe sont importantes. Architecte est discuté pour construction, recherche et siège.</li>
+<li>Certaines compétences augmentent les dégâts à la durabilité du mur de ville pendant les sièges.</li>
+<li>Marche forcée ou Bannière de siège ont des résultats de tests mitigés; n’investissez pas aveuglément.</li>
+<li>Les compétences niveau 15+ se débloquent différemment selon serveur; une ligne bloquée peut être phase, bug ou délai.</li>
+<li>La réinitialisation peut être stratégique. Les compétences normales restent utiles après S1; les compétences saisonnières peuvent être remboursées ou disparaître.</li>
+<li>Vers la fin, déplacez éventuellement les points vers Recherche, Construction et Production de ressources.</li>
+</ul></article>
+<article class="chapter" id="fr-11-heros-bonus-de-saison-crystal-et-echange-de-niveau"><a class="toplink" href="#top" title="Top">↑</a><h2>11. Héros, bonus de saison, Crystal et échange de niveau</h2><ul>
+<li>Les héros à bonus cités sont Crystal, Sera, Fenixia/Fenxia et Daphne.</li>
+<li>Crystal est importante pour F2P/low spend : à 5 étoiles, elle peut devenir dorée S+, mais les étoiles suivantes coûtent beaucoup de fragments violets S+.</li>
+<li>L’échange de niveau ne change que l’EXP. Il ne transfère pas étoiles, ascension, médailles ou compétences; certaines compétences peuvent se verrouiller si le niveau baisse.</li>
+<li>N’utilisez pas l’échange trop tôt sur un héros doré sans étoiles. Collectez les fragments puis échangez quand il peut être prêt au combat.</li>
+<li>L’Arc de demain de Sera est un équipement exclusif qui s’ajoute à l’équipement normal, ajoute des compétences et peut augmenter les niveaux max. Il exige souvent Sera 5 étoiles et des fragments spécifiques.</li>
+<li>L’équipement exclusif peut être cher; le Marché noir / Festival peut donner accès plus lentement selon serveur.</li>
+</ul></article>
+<article class="chapter" id="fr-12-villes-niveau-6-ville-royale-et-fin-de-saison"><a class="toplink" href="#top" title="Top">↑</a><h2>12. Villes niveau 6, Ville royale et fin de saison</h2><ul>
+<li>Les villes niveau 6 sont parmi les plus importantes avant la Ville royale; elles peuvent donner beaucoup de cristaux et influencer l’accès royal.</li>
+<li>Si elles sont déjà contrôlées par des unions fortes, la négociation peut être plus réaliste que la force.</li>
+<li>La semaine 7 est souvent la phase décisive. Attendre la fin est dangereux à cause des protections, verrous de carte ou changements.</li>
+<li>Ne perdez pas une ville niveau 6 tard en pensant la récupérer après; plusieurs serveurs ont vu mines et villes verrouillées.</li>
+<li>La Ville royale donne autorité, récompenses, titres ou bonus, mais pas forcément des cristaux. Le Fourneau royal chauffe localement.</li>
+<li>But final : garder la meilleure combinaison réaliste de fabriques, villes utiles, mines gelées et accès clés en évitant les pertes inutiles.</li>
+</ul></article>
+<article class="chapter" id="fr-13-apres-la-saison-1-et-marche-noir"><a class="toplink" href="#top" title="Top">↑</a><h2>13. Après la Saison 1 et Marché noir</h2><ul>
+<li>Après S1 peut venir le Festival / Marché noir, phase de récupération et préparation.</li>
+<li>Pièces d’or noir, quêtes bingo et boutique deviennent importantes. Priorisez fragments exclusifs, décorations, cadres, accélérations et ressources héros.</li>
+<li>Certains bâtiments ou éléments peuvent rester, tandis que Coup de froid, trésors ou Expédition finissent.</li>
+<li>Les règles d’après-saison changent selon serveur; planifiez comme si la semaine 7 était la dernière correction fiable.</li>
+</ul></article>
+<article class="chapter" id="fr-14-liste-quotidienne-du-leadership"><a class="toplink" href="#top" title="Top">↑</a><h2>14. Liste quotidienne du leadership</h2><ul>
+<li>Vérifier le calendrier avant les ordres.</li>
+<li>Contrôler fourneau, dons charbon/or et couverture de chaleur.</li>
+<li>S’assurer que les prises de mines servent la route.</li>
+<li>Coordonner les déclarations et éviter les abandons accidentels.</li>
+<li>Suivre diplomatie, pactes et cases de ressources.</li>
+<li>Rappeler l’usage intelligent de l’endurance entre mines, zombies, Arm Race, squelettes, dragons, Nightfall et événements.</li>
+<li>Préparer semaine 7 : villes clés, mines d’accès, horaires ennemis, fourneau, chefs de ralliement et boucliers.</li>
+</ul></article>
+<article class="chapter" id="fr-15-glossaire-et-resume-final"><a class="toplink" href="#top" title="Top">↑</a><h2>15. Glossaire et résumé final</h2><ul>
+<li>Fourneau thermique : fourneau personnel pour chaleur et résistance.</li>
+<li>Fourneau d’union : fourneau d’alliance chauffant la zone.</li>
+<li>Coup de froid : chute de température qui peut geler les châteaux.</li>
+<li>Mine gelée : territoire saisonnier pour expansion, récompenses et cristaux.</li>
+<li>Ville : village, manoir, fabrique, ville ou métropole/bibliothèque niveau 6.</li>
+<li>Cristaux de glace : ressource centrale liée au territoire détenu.</li>
+<li>Avant-poste : structure d’Expédition pour expansion inter-serveurs.</li>
+<li>Case de ressources : zone de récolte traitée différemment d’un château.</li>
+<li>Résumé : S1 récompense chaleur, coordination, bonne endurance, accords utiles et positions finales sécurisées tôt.</li>
+</ul></article>
+</section><section class="lang-section" id="lang-gr" data-lang="gr">
+<div class="lang-title"><span>GR</span><h1>Ελληνικά</h1></div>
+<div class="toc-card"><h2>Table of Contents / Inhaltsverzeichnis / Índice</h2><ol><li><a href="#gr-1-section">Σκοπός και ιεράρχηση πηγών</a></li><li><a href="#gr-2-season-1">Season 1 σε μία φράση</a></li><li><a href="#gr-3-section">Προετοιμασία πριν την έναρξη</a></li><li><a href="#gr-4-section">Θερμότητα, πάγωμα και φούρνοι</a></li><li><a href="#gr-5-section">Τοποθέτηση κάστρου και μολυσμένο έδαφος</a></li><li><a href="#gr-6-mines-cities-ice-crystals">Mines, cities και Ice Crystals</a></li><li><a href="#gr-7-route-planning-early-expansion">Route planning και early expansion</a></li><li><a href="#gr-8-kingdom-expedition-outposts">Kingdom Expedition και outposts</a></li><li><a href="#gr-9-diplomacy-war-days-resource-tiles">Diplomacy, war days και resource tiles</a></li><li><a href="#gr-10-class-hall-skills-reset">Class Hall, skills και reset</a></li><li><a href="#gr-11-heroes-season-boosts-crystal-level-swap">Heroes, Season Boosts, Crystal και Level Swap</a></li><li><a href="#gr-12-level-6-cities-royal-city-endgame">Level 6 cities, Royal City και endgame</a></li><li><a href="#gr-13-season-1-black-market">Μετά τη Season 1 και Black Market</a></li><li><a href="#gr-14-daily-leadership-checklist">Daily leadership checklist</a></li><li><a href="#gr-15-section">Γλωσσάρι και τελική σύνοψη</a></li></ol></div>
+<article class="chapter" id="gr-1-section"><a class="toplink" href="#top" title="Top">↑</a><h2>1. Σκοπός και ιεράρχηση πηγών</h2><ul>
+<li>Αυτός ο οδηγός είναι πρακτικός οδηγός ηγεσίας για το X-Clash Season 1: Winter Is Coming / Polar Tempest. Είναι χρήσιμος για κάθε ένωση και όχι για έναν συγκεκριμένο server.</li>
+<li>Ιεράρχηση πηγών: επίσημο X-Clash / Strawberry πρώτα, Animality / Pioneer Test Group ως ισχυρή πρακτική ένδειξη, έμπειροι guide contributors ως χρήσιμες αναφορές, μεμονωμένα σχόλια ως χαμηλότερη βεβαιότητα.</li>
+<li>Αν το event calendar, το επίσημο spreadsheet ή οι τρέχοντες κανόνες διαφωνούν με παλιά Discord posts, ακολουθούμε πάντα το παιχνίδι και το επίσημο υλικό.</li>
+<li>Στόχος είναι να δοθεί σειρά προτεραιοτήτων: θερμότητα, territory, route, diplomacy, stamina, rewards και endgame security.</li>
+</ul></article>
+<article class="chapter" id="gr-2-season-1"><a class="toplink" href="#top" title="Top">↑</a><h2>2. Season 1 σε μία φράση</h2><ul>
+<li>Η Season 1 δεν είναι μόνο combat season. Είναι logistics, survival και territory-control season.</li>
+<li>Οι δυνατότερες ενώσεις δεν είναι πάντα όσες χτυπούν περισσότερο, αλλά όσες κρατούν τους παίκτες ζεστούς, κρατούν χρήσιμα mines/cities, ξοδεύουν stamina σωστά, σέβονται χρήσιμες συμφωνίες και προετοιμάζουν νωρίς το τέλος.</li>
+<li>Κεντρική αρχή: μείνετε ζεστοί, επεκταθείτε με σκοπό, κρατήστε ό,τι αξίζει και μη περιμένετε την τελευταία εβδομάδα για διορθώσεις.</li>
+</ul></article>
+<article class="chapter" id="gr-3-section"><a class="toplink" href="#top" title="Top">↑</a><h2>3. Προετοιμασία πριν την έναρξη</h2><ul>
+<li>Οι παίκτες πρέπει να μάθουν σωστό castle parking μέσα σε warm zones. Διάσπαρτα castles παγώνουν και γίνονται αναποτελεσματικά.</li>
+<li>Πρέπει να κατανοηθεί το rally point / union teleport. Λάθος relocation κοστίζει χρόνο και heat coverage.</li>
+<li>Αφαιρέστε teams από castle wall defense πριν από επικίνδυνες φάσεις, εκτός αν δοθεί άλλη οδηγία: Castle Wall &gt; City Defense &gt; uncheck Join the defense. Αλλιώς ο εχθρός μπορεί να στραγγίξει troops.</li>
+<li>Κρατήστε stamina. Frost Mines, zombies, monsters, skeletons, dragons, Nightfall wolves/sharks και recurring events χρησιμοποιούν την ίδια stamina.</li>
+<li>Κρατήστε purple S hero shards. Crystal 5 αστέρων μπορεί στη S1 να γίνει gold S+, αλλά το star-up μετά κοστίζει πολύ.</li>
+<li>Περιμένετε bugs και αλλαγές. Ελέγχετε event calendar και τρέχοντες κανόνες συχνά.</li>
+</ul></article>
+<article class="chapter" id="gr-4-section"><a class="toplink" href="#top" title="Top">↑</a><h2>4. Θερμότητα, πάγωμα και φούρνοι</h2><ul>
+<li>Υπάρχουν δύο βασικοί φούρνοι: Personal Thermal Furnace για το δικό σας castle/resistance και Union Furnace που ζεσταίνει castles στην περιοχή.</li>
+<li>Cold Snap είναι επαναλαμβανόμενος κίνδυνος. Χωρίς έτοιμο furnace, castles παγώνουν και χάνουν σημαντικές δράσεις.</li>
+<li>Frozen castle μπορεί ακόμα να κάνει Frost Zombies, farming, normal zombies, wagon plunder, μερικά intelligence/tavern tasks, World Boss και relocation.</li>
+<li>Frozen castle δεν μπορεί να κάνει Elite Zombies, rallies ή Union Boss. Γι’ αυτό heat discipline είναι υποχρεωτικό.</li>
+<li>Union Furnace placement πρέπει να καλύπτει ενεργά castles και επιχειρησιακές ζώνες. Όταν κινείστε πιο βαθιά, θέση κοντά/μέσα σε occupied city είναι συχνά καλύτερη.</li>
+<li>Occupied cities δίνουν τοπική θερμότητα. Frost Mines δεν δίνουν heat. Το εσωτερικό map είναι πιο κρύο από το εξωτερικό.</li>
+</ul></article>
+<article class="chapter" id="gr-5-section"><a class="toplink" href="#top" title="Top">↑</a><h2>5. Τοποθέτηση κάστρου και μολυσμένο έδαφος</h2><ul>
+<li>Τα castles πρέπει να μπαίνουν μέσα στη warm area, κοντά στο group και σε πρακτική εμβέλεια του Union Furnace.</li>
+<li>Αποφύγετε dark/contaminated land γύρω από mines/cities αν γίνεται, γιατί μπορεί να φέρει restrictions και μεγαλύτερο κίνδυνο.</li>
+<li>Νωρίς, πολλές ενώσεις μένουν κοντά σε level 1 villages ή level 2 Frost Mine areas για πιο εύκολη θερμοκρασία.</li>
+<li>Πριν μετακινηθεί όλη η ένωση, ζεστάνετε key players, ελέγξτε furnace coverage και εξηγήστε στους μικρότερους πού να σταθούν.</li>
+<li>Relocation δεν είναι μόνο teleport: είναι heat, rally, defense, stamina και activity decision.</li>
+</ul></article>
+<article class="chapter" id="gr-6-mines-cities-ice-crystals"><a class="toplink" href="#top" title="Top">↑</a><h2>6. Mines, cities και Ice Crystals</h2><ul>
+<li>Frost Mines και cities είναι βάση scoring. Capture βοηθά, αλλά holding μετρά για Ice Crystals.</li>
+<li>Οι πληροφορίες δείχνουν ότι η αξία βασίζεται σε ό,τι κρατά η ένωση, όχι απλώς σε ό,τι κατέλαβε. Abandon μπορεί να μειώσει αξία.</li>
+<li>Base Frost Mine capacity συχνά αναφέρεται ως 3. Κάθε city/village αυξάνει capacity, ενώ level 6 cities συχνά δίνουν +2.</li>
+<li>City/mine limits διαφέρουν ανά home server και cross-server phase. Ελέγχετε πάντα Union City και event rules.</li>
+<li>First capture μπορεί να δώσει union loot boxes. Να μοιράζονται δίκαια και να ελέγχεται αν υπήρχε ήδη first-capture tag.</li>
+<li>Μην εγκαταλείπετε σημαντικά mines/cities χωρίς συντονισμό. Territory είναι score, access, route, heat planning και negotiation power.</li>
+</ul></article>
+<article class="chapter" id="gr-7-route-planning-early-expansion"><a class="toplink" href="#top" title="Top">↑</a><h2>7. Route planning και early expansion</h2><ul>
+<li>Μη σχεδιάζετε τέλεια route πριν ανοίξει η season, γιατί το starting location μπορεί να φανεί μόνο τότε.</li>
+<li>Μόλις ξεκινήσει, αποφασίστε route προς valuable mines, useful cities και key areas.</li>
+<li>Αν Frost Mine boss είναι πολύ δυνατός, μη χάνετε όλη τη μέρα. Pivot σε χαμηλότερο κοντινό mine.</li>
+<li>Frost Mines δεν χρειάζεται πάντα να είναι αριθμητικά, αλλά πρέπει συνήθως να ακουμπούν δικό σας land. Diagonal δεν αρκεί.</li>
+<li>City levels ανοίγουν με time gates. Αργότερα declarations συχνά περιορίζονται σε Wednesday/Saturday.</li>
+</ul></article>
+<article class="chapter" id="gr-8-kingdom-expedition-outposts"><a class="toplink" href="#top" title="Top">↑</a><h2>8. Kingdom Expedition και outposts</h2><ul>
+<li>Kingdom Expedition ανοίγει cross-server phase. R4/R5 βάζουν outposts σε άλλους servers, συνήθως όχι στον home server.</li>
+<li>Υπάρχουν διαφορετικές αναφορές για move outpost, άρα η τοποθέτηση πρέπει να θεωρείται σοβαρή και να ελέγχεται στο event interface.</li>
+<li>Μετά το outpost, το πρώτο connected mine γίνεται πρακτικό start point και μετά επέκταση με adjacent land.</li>
+<li>Με Expedition μπορεί συχνά να γίνει free relocation αν χρησιμοποιηθεί σωστά. Οι άπειροι πρέπει να εξασκηθούν για να μη σπαταλήσουν teleports.</li>
+<li>Μην εισβάλλετε τυφλά. Trade και diplomacy σώζουν troops, γιατί CoK και άλλα events συνεχίζουν.</li>
+<li>Κάθε ένωση μπορεί να διαλέξει στόχο και πολλές ενώσεις μπορούν να πιέσουν τον ίδιο server. Diplomacy και timing αξίζουν περισσότερο από θυμό.</li>
+</ul></article>
+<article class="chapter" id="gr-9-diplomacy-war-days-resource-tiles"><a class="toplink" href="#top" title="Top">↑</a><h2>9. Diplomacy, war days και resource tiles</h2><ul>
+<li>Η S1 μπορεί να καταστρέψει troops αν castles χτυπιούνται χωρίς σκοπό. Πολλοί servers κάνουν agreements για αποφυγή άχρηστων castle attacks.</li>
+<li>Coexistence είναι strategy, όχι weakness. Αν unions ανταλλάσσουν objectives ή short reward windows, όλοι προχωρούν καλύτερα.</li>
+<li>Resource tiles διαφέρουν από castles. Χωρίς non-aggression agreement, enemies on tiles μπορούν συχνά να χτυπηθούν.</li>
+<li>War days θέλουν καθαρές οδηγίες: αν πολεμάμε, πολεμάμε με στόχο και χρόνο· αν υπάρχει agreement, το ανακοινώνουμε.</li>
+<li>Inactives/non-fighters πρέπει να ξέρουν shield expectations. Ακόμα και με agreements συμβαίνουν λάθη ή tile conflicts.</li>
+<li>Royal City μπορεί να γίνει 0 °C στο CoK, αλλά δεν είναι μόνιμη λύση θερμότητας για όλο το kingdom.</li>
+</ul></article>
+<article class="chapter" id="gr-10-class-hall-skills-reset"><a class="toplink" href="#top" title="Top">↑</a><h2>10. Class Hall, skills και reset</h2><ul>
+<li>Class Hall και Class EXP είναι σημαντικά. Architect class συζητείται για building, research και siege utility.</li>
+<li>Κάποια skills αυξάνουν city wall durability damage κατά city siege.</li>
+<li>Forced March ή Siege Banner έχουν mixed reports. Μην επενδύετε τυφλά χωρίς server testing.</li>
+<li>Level 15+ skills ξεκλειδώνουν διαφορετικά ανά server. Locked row μπορεί να είναι stage, bug ή delay.</li>
+<li>Class skill reset μπορεί να είναι στρατηγικό. Normal skills μένουν χρήσιμα μετά τη S1, Season skills μπορεί να refund/εξαφανιστούν.</li>
+<li>Προς το τέλος, μετακινήστε πόντους σε Research, Building και Resource Production αν ταιριάζει στους στόχους.</li>
+</ul></article>
+<article class="chapter" id="gr-11-heroes-season-boosts-crystal-level-swap"><a class="toplink" href="#top" title="Top">↑</a><h2>11. Heroes, Season Boosts, Crystal και Level Swap</h2><ul>
+<li>Season Boost heroes: Crystal, Sera, Fenixia/Fenxia, Daphne.</li>
+<li>Crystal είναι σημαντική για F2P/low spend. Crystal 5 αστέρων μπορεί να γίνει gold S+, αλλά μετά χρειάζεται πολλά purple S+ shards.</li>
+<li>Level Swap αλλάζει μόνο EXP levels. Δεν μεταφέρει stars, ascension, medals ή skills. Αν πέσει level, skills μπορεί να lock.</li>
+<li>Μην κάνετε swap νωρίς σε νέο gold hero χωρίς stars. Μαζέψτε shards πρώτα και swap όταν γίνεται battle-ready.</li>
+<li>Sera’s Bow of Tomorrow είναι exclusive gear που προσθέτει skills και αυξάνει max skill levels, χωρίς να αντικαθιστά normal gear. Συνήθως θέλει 5-star Sera και specific bow shards.</li>
+<li>Exclusive gear μπορεί να είναι ακριβό· Black Market / Season Festival ίσως δώσει πιο αργή πρόσβαση.</li>
+</ul></article>
+<article class="chapter" id="gr-12-level-6-cities-royal-city-endgame"><a class="toplink" href="#top" title="Top">↑</a><h2>12. Level 6 cities, Royal City και endgame</h2><ul>
+<li>Level 6 cities είναι από τις πιο σημαντικές normal cities πριν Royal City και μπορούν να δίνουν πολλά Ice Crystals/access.</li>
+<li>Αν τα κρατούν ισχυρές ενώσεις, negotiation μπορεί να είναι πιο ρεαλιστικό από force.</li>
+<li>Week 7 θεωρείται decisive endgame push. Τα τελευταία days είναι επικίνδυνα λόγω shields, map locks ή rule changes.</li>
+<li>Μη χάσετε level 6 city αργά πιστεύοντας ότι θα την πάρετε μετά· πολλοί servers αναφέρουν locks.</li>
+<li>Royal City δίνει authority/rewards/titles/buffs, αλλά όχι απαραίτητα Ice Crystals. Royal Furnace θερμαίνει τοπικά.</li>
+<li>Τελικός στόχος: καλύτερος ρεαλιστικός συνδυασμός factories, useful cities, Frost Mines και access points χωρίς άχρηστες απώλειες.</li>
+</ul></article>
+<article class="chapter" id="gr-13-season-1-black-market"><a class="toplink" href="#top" title="Top">↑</a><h2>13. Μετά τη Season 1 και Black Market</h2><ul>
+<li>Μετά τη S1 μπορεί να έρθει Season Festival / Black Market ως recovery/prep phase.</li>
+<li>Black Gold Coins, bingo quests και shop rotations είναι σημαντικά. Prioritize exclusive shards, decorations, frames, speedups και hero resources.</li>
+<li>Κάποια seasonal buildings/map elements μένουν, ενώ Cold Snap, treasures ή Expedition τελειώνουν.</li>
+<li>Rules after season άλλαξαν ανά server. Plan as if Week 7 is the last reliable chance.</li>
+</ul></article>
+<article class="chapter" id="gr-14-daily-leadership-checklist"><a class="toplink" href="#top" title="Top">↑</a><h2>14. Daily leadership checklist</h2><ul>
+<li>Check event calendar πριν orders.</li>
+<li>Check furnace, coal/gold donations και heat coverage.</li>
+<li>Use mine attempts σε route targets, όχι random land.</li>
+<li>Coordinate city declarations και avoid accidental drops.</li>
+<li>Track diplomacy, NAPs, tile rules και reward windows.</li>
+<li>Remind stamina balance ανάμεσα σε mines, zombies, Arm Race, skeletons, dragons, Nightfall και άλλα events.</li>
+<li>Prepare Week 7: key cities, access mines, enemy timing, furnace, rally leaders, shields.</li>
+</ul></article>
+<article class="chapter" id="gr-15-section"><a class="toplink" href="#top" title="Top">↑</a><h2>15. Γλωσσάρι και τελική σύνοψη</h2><ul>
+<li>Thermal Furnace: προσωπικός φούρνος για heat/resistance.</li>
+<li>Union Furnace: φούρνος ένωσης που ζεσταίνει περιοχή.</li>
+<li>Cold Snap: πτώση θερμοκρασίας που παγώνει castles.</li>
+<li>Frost Mine: seasonal mine territory για expansion/rewards/Ice Crystals.</li>
+<li>City: village, manor, factory, town ή level 6 metropolis/library.</li>
+<li>Ice Crystals: βασικός scoring πόρος δεμένος με held territory.</li>
+<li>Outpost: structure για cross-server expansion.</li>
+<li>Tile: resource field, διαφορετικό από castle attack.</li>
+<li>Σύνοψη: S1 ανταμείβει θερμότητα, coordination, σωστή stamina, χρήσιμες συμφωνίες και έγκαιρο endgame.</li>
+</ul></article>
+</section><section class="lang-section" id="lang-ro" data-lang="ro">
+<div class="lang-title"><span>RO</span><h1>Română</h1></div>
+<div class="toc-card"><h2>Table of Contents / Inhaltsverzeichnis / Índice</h2><ol><li><a href="#ro-1-scop-si-ierarhia-surselor">Scop și ierarhia surselor</a></li><li><a href="#ro-2-sezonul-1-intr-o-fraza">Sezonul 1 într-o frază</a></li><li><a href="#ro-3-pregatire-inainte-de-sezon">Pregătire înainte de sezon</a></li><li><a href="#ro-4-caldura-inghet-si-furnale">Căldură, îngheț și furnale</a></li><li><a href="#ro-5-plasarea-castelului-si-teren-contaminat">Plasarea castelului și teren contaminat</a></li><li><a href="#ro-6-mine-orase-si-cristale-de-gheata">Mine, orașe și cristale de gheață</a></li><li><a href="#ro-7-ruta-si-expansiune-timpurie">Rută și expansiune timpurie</a></li><li><a href="#ro-8-kingdom-expedition-si-avanposturi">Kingdom Expedition și avanposturi</a></li><li><a href="#ro-9-diplomatie-zile-de-razboi-si-tile-uri">Diplomație, zile de război și tile-uri</a></li><li><a href="#ro-10-class-hall-skilluri-si-reset">Class Hall, skilluri și reset</a></li><li><a href="#ro-11-eroi-boosturi-crystal-si-level-swap">Eroi, boosturi, Crystal și Level Swap</a></li><li><a href="#ro-12-orase-nivel-6-royal-city-si-endgame">Orașe nivel 6, Royal City și endgame</a></li><li><a href="#ro-13-dupa-sezonul-1-si-black-market">După Sezonul 1 și Black Market</a></li><li><a href="#ro-14-checklist-zilnic-pentru-leadership">Checklist zilnic pentru leadership</a></li><li><a href="#ro-15-glosar-si-rezumat-final">Glosar și rezumat final</a></li></ol></div>
+<article class="chapter" id="ro-1-scop-si-ierarhia-surselor"><a class="toplink" href="#top" title="Top">↑</a><h2>1. Scop și ierarhia surselor</h2><ul>
+<li>Acest ghid este un ghid practic de leadership pentru X-Clash Sezonul 1: Winter Is Coming / Polar Tempest. Este util pentru orice uniune, nu pentru un singur server.</li>
+<li>Ierarhia surselor: materialul oficial X-Clash / Strawberry are prioritate; Animality / Pioneer Test Group este dovadă practică puternică; creatorii de ghiduri și jucătorii experimentați sunt rapoarte utile; comentariile izolate sunt indicii mai puțin sigure.</li>
+<li>Dacă calendarul evenimentului, tabelul oficial sau regulile actuale contrazic postări vechi de Discord, urmați mai întâi informația din joc.</li>
+<li>Scopul este ordinea priorităților: căldură, teritoriu, rută, diplomație, stamina, recompense și siguranță de final.</li>
+</ul></article>
+<article class="chapter" id="ro-2-sezonul-1-intr-o-fraza"><a class="toplink" href="#top" title="Top">↑</a><h2>2. Sezonul 1 într-o frază</h2><ul>
+<li>Sezonul 1 nu este doar combat. Este logistică, supraviețuire și control teritorial.</li>
+<li>Cele mai puternice uniuni nu atacă mereu cel mai mult; ele își țin jucătorii la cald, păstrează mine și orașe utile, folosesc stamina eficient și pregătesc finalul din timp.</li>
+<li>Principiul: rămâneți la cald, extindeți-vă cu scop, păstrați ce contează și nu așteptați ultima săptămână pentru greșeli strategice.</li>
+</ul></article>
+<article class="chapter" id="ro-3-pregatire-inainte-de-sezon"><a class="toplink" href="#top" title="Top">↑</a><h2>3. Pregătire înainte de sezon</h2><ul>
+<li>Învățați jucătorii să plaseze corect castelele în zone calde. Castelele risipite îngheață și devin ineficiente.</li>
+<li>Jucătorii trebuie să înțeleagă punctul de rally / teleportarea uniunii. O relocare greșită costă timp și acoperire termică.</li>
+<li>Scoateți echipele de pe apărarea zidului înainte de faze periculoase: Castle Wall &gt; City Defense &gt; debifați Join the defense. Altfel inamicii pot consuma trupele.</li>
+<li>Economisiți stamina. Frost Mines, zombi, monștri, scheleți, dragoni, lupi/rechini Nightfall și evenimente recurente folosesc aceeași resursă.</li>
+<li>Păstrați fragmentele mov S. Crystal 5 stele poate deveni aur S+ în S1, dar evoluția ulterioară costă mult.</li>
+<li>Așteptați buguri. Regulile au diferit între servere; verificați des calendarul și regulile live.</li>
+</ul></article>
+<article class="chapter" id="ro-4-caldura-inghet-si-furnale"><a class="toplink" href="#top" title="Top">↑</a><h2>4. Căldură, îngheț și furnale</h2><ul>
+<li>Există două furnale: Thermal Furnace personal pentru propriul castel/rezistență și Union Furnace care încălzește zona pentru castelele din jur.</li>
+<li>Cold Snap este pericol recurent. Fără furnal pregătit, castelele pot îngheța și pierde acțiuni importante.</li>
+<li>Un castel înghețat poate încă ucide Frost Zombies, farma, omorî zombi normali, jefui vagoane, face unele questuri de intelligence/tavernă, ataca World Boss și se reloca.</li>
+<li>Un castel înghețat nu poate ataca Elite Zombies, lansa rallies sau participa la Union Boss. Disciplina de căldură este obligatorie.</li>
+<li>Poziția Union Furnace trebuie să acopere jucătorii activi și zonele operaționale. Mai adânc pe hartă, lângă/în oraș ocupat util este deseori mai bine.</li>
+<li>Orașele ocupate dau căldură locală; Frost Mines nu. Centrul hărții este mai rece decât exteriorul.</li>
+</ul></article>
+<article class="chapter" id="ro-5-plasarea-castelului-si-teren-contaminat"><a class="toplink" href="#top" title="Top">↑</a><h2>5. Plasarea castelului și teren contaminat</h2><ul>
+<li>Castelele trebuie puse în zona caldă, aproape de grup și în raza practică a Union Furnace.</li>
+<li>Evitați terenul întunecat/contaminat lângă mine și orașe; poate aduce restricții și risc mai mare.</li>
+<li>La început, multe uniuni rămân lângă sate nivel 1 sau zone Frost Mine nivel 2, unde temperatura este mai ușor de gestionat.</li>
+<li>Înainte de relocare mare, încălziți jucătorii-cheie, verificați acoperirea furnalului și spuneți clar unde se parchează.</li>
+<li>Relocarea nu este doar teleport; este decizie de căldură, rally, apărare, stamina și activitate.</li>
+</ul></article>
+<article class="chapter" id="ro-6-mine-orase-si-cristale-de-gheata"><a class="toplink" href="#top" title="Top">↑</a><h2>6. Mine, orașe și cristale de gheață</h2><ul>
+<li>Frost Mines și orașele sunt baza scorului. Captura ajută, dar menținerea contează pentru Ice Crystals.</li>
+<li>Valoarea cristalelor depinde de ce deține uniunea, nu doar de ce a capturat cândva. Abandonarea poate reduce valoarea.</li>
+<li>Capacitatea de bază Frost Mine este des raportată ca 3. Fiecare oraș/sat adaugă capacitate; orașele nivel 6 pot da mai mult, adesea +2.</li>
+<li>Limitele variază după server și faza cross-server. Verificați mereu Union City și regulile actuale.</li>
+<li>Prima captură poate da cutii de loot pentru uniune; distribuiți corect și verificați tagul de first capture.</li>
+<li>Nu abandonați mine sau orașe importante fără coordonare. Teritoriul înseamnă scor, acces, rută, căldură și negociere.</li>
+</ul></article>
+<article class="chapter" id="ro-7-ruta-si-expansiune-timpurie"><a class="toplink" href="#top" title="Top">↑</a><h2>7. Rută și expansiune timpurie</h2><ul>
+<li>Nu planificați perfect înainte de start, deoarece poziția inițială poate fi necunoscută.</li>
+<li>După start, decideți rapid ruta spre mine valoroase, orașe utile și zone-cheie.</li>
+<li>Dacă bossul unei Frost Mine este prea puternic, pivotați la o mină mai joasă apropiată.</li>
+<li>Minele nu trebuie mereu luate numeric, dar trebuie de obicei să atingă teritoriul propriu; diagonala nu ajunge.</li>
+<li>Orașele se deschid prin time gates; mai târziu declarațiile pot fi limitate la miercuri și sâmbătă.</li>
+</ul></article>
+<article class="chapter" id="ro-8-kingdom-expedition-si-avanposturi"><a class="toplink" href="#top" title="Top">↑</a><h2>8. Kingdom Expedition și avanposturi</h2><ul>
+<li>Kingdom Expedition deschide faza cross-server. R4/R5 pun avanposturi pe alte servere; de obicei nu pe serverul propriu.</li>
+<li>Rapoartele diferă despre mutarea avanposturilor; tratați plasarea ca importantă și verificați interfața.</li>
+<li>După plasare, prima mină conectată este punctul practic de start, apoi expansiunea merge prin teren adiacent.</li>
+<li>Expedition permite adesea relocare gratuită dacă este folosită corect; jucătorii neexperimentați trebuie să exerseze.</li>
+<li>Nu invadați orbește. Comerțul și diplomația economisesc trupe, deoarece CoK și alte evenimente continuă.</li>
+<li>Fiecare uniune poate alege ținta, iar mai multe uniuni pot presa același server; timingul și diplomația valorează mult.</li>
+</ul></article>
+<article class="chapter" id="ro-9-diplomatie-zile-de-razboi-si-tile-uri"><a class="toplink" href="#top" title="Top">↑</a><h2>9. Diplomație, zile de război și tile-uri</h2><ul>
+<li>Sezonul 1 poate distruge trupele dacă se atacă castele fără scop. Multe servere folosesc acorduri pentru a evita pierderi inutile.</li>
+<li>Coexistența este strategie. Schimbul de obiective, ferestre scurte de recompense și evitarea arderii castelelor ajută progresul.</li>
+<li>Tile-urile de resurse sunt diferite de castele. Fără pact de non-agresiune, inamicii de pe tile pot fi atacați.</li>
+<li>Zilele de război cer ordine clare: dacă luptăm, luptăm cu țintă și timp; dacă respectăm acord, comunicăm.</li>
+<li>Inactivii și non-combatanții trebuie să știe când folosesc scut. Greșeli și conflicte pe tile pot apărea.</li>
+<li>Royal City poate fi la 0 °C în CoK, dar nu este soluție permanentă de căldură pentru tot regatul.</li>
+</ul></article>
+<article class="chapter" id="ro-10-class-hall-skilluri-si-reset"><a class="toplink" href="#top" title="Top">↑</a><h2>10. Class Hall, skilluri și reset</h2><ul>
+<li>Class Hall și Class EXP sunt importante. Architect este discutat pentru construcție, research și asediu.</li>
+<li>Unele skilluri cresc daunele la durabilitatea zidului în city siege.</li>
+<li>Forced March sau Siege Banner au teste mixte; nu investiți orbește.</li>
+<li>Skillurile nivel 15+ se deschid diferit pe servere; blocarea poate fi fază, bug sau întârziere.</li>
+<li>Resetul de class skills poate fi strategic. Skillurile normale rămân utile după S1; skillurile sezoniere pot fi rambursate sau dispărea.</li>
+<li>Spre final, mutați puncte spre Research, Building și Resource Production, dacă se potrivesc scopului.</li>
+</ul></article>
+<article class="chapter" id="ro-11-eroi-boosturi-crystal-si-level-swap"><a class="toplink" href="#top" title="Top">↑</a><h2>11. Eroi, boosturi, Crystal și Level Swap</h2><ul>
+<li>Eroi boost menționați: Crystal, Sera, Fenixia/Fenxia și Daphne.</li>
+<li>Crystal contează mult pentru F2P/low spend: la 5 stele poate deveni aur S+, dar apoi cere multe fragmente mov S+.</li>
+<li>Level Swap schimbă doar nivelurile EXP. Nu transferă stele, ascension, medalii sau skilluri; skillurile se pot bloca dacă nivelul scade.</li>
+<li>Nu folosiți Level Swap prea devreme pe erou aur fără stele. Strângeți fragmente și schimbați când devine util în luptă.</li>
+<li>Sera’s Bow of Tomorrow este echipament exclusiv care nu înlocuiește gear normal, ci adaugă skilluri și poate crește nivelul maxim. Cere de obicei Sera 5 stele și fragmente specifice.</li>
+<li>Echipamentul exclusiv poate fi scump; Black Market / Season Festival poate oferi acces mai lent.</li>
+</ul></article>
+<article class="chapter" id="ro-12-orase-nivel-6-royal-city-si-endgame"><a class="toplink" href="#top" title="Top">↑</a><h2>12. Orașe nivel 6, Royal City și endgame</h2><ul>
+<li>Orașele nivel 6 sunt printre cele mai importante înainte de Royal City; pot da multe cristale și acces.</li>
+<li>Dacă sunt controlate de uniuni puternice, negocierea poate fi mai realistă decât forța.</li>
+<li>Săptămâna 7 este faza decisivă. Așteptarea ultimelor zile este periculoasă din cauza protecțiilor și blocărilor.</li>
+<li>Nu pierdeți oraș nivel 6 târziu crezând că îl recuperați după; multe servere au raportat lock-uri.</li>
+<li>Royal City dă autoritate, recompense, titluri sau buffuri, dar nu neapărat cristale. Royal Furnace încălzește local.</li>
+<li>Scopul final: combinație realistă de fabrici, orașe utile, Frost Mines și acces, cu pierderi minime.</li>
+</ul></article>
+<article class="chapter" id="ro-13-dupa-sezonul-1-si-black-market"><a class="toplink" href="#top" title="Top">↑</a><h2>13. După Sezonul 1 și Black Market</h2><ul>
+<li>După S1 poate veni Season Festival / Black Market pentru recuperare și pregătire.</li>
+<li>Black Gold Coins, bingo quests și shop rotation devin importante. Prioritizați fragmente exclusive, decorații, rame, speedups și resurse eroi.</li>
+<li>Unele clădiri sau elemente rămân, dar Cold Snap, comori sau Expedition se termină.</li>
+<li>Regulile post-sezon diferă; planificați ca și cum săptămâna 7 e ultima șansă sigură.</li>
+</ul></article>
+<article class="chapter" id="ro-14-checklist-zilnic-pentru-leadership"><a class="toplink" href="#top" title="Top">↑</a><h2>14. Checklist zilnic pentru leadership</h2><ul>
+<li>Verificați calendarul înainte de ordine.</li>
+<li>Verificați furnalul, donațiile coal/gold și căldura.</li>
+<li>Folosiți încercările de mine pe ruta planificată.</li>
+<li>Coordonați declarațiile și evitați abandonări accidentale.</li>
+<li>Urmăriți diplomația, NAP-urile și regulile de tile.</li>
+<li>Reamintiți folosirea inteligentă a stamina între mine, zombi, Arm Race, scheleți, dragoni, Nightfall și evenimente.</li>
+<li>Pregătiți săptămâna 7: orașe cheie, mine de acces, timing inamic, furnal, rally leaders și scuturi.</li>
+</ul></article>
+<article class="chapter" id="ro-15-glosar-si-rezumat-final"><a class="toplink" href="#top" title="Top">↑</a><h2>15. Glosar și rezumat final</h2><ul>
+<li>Thermal Furnace: furnal personal pentru căldură și rezistență.</li>
+<li>Union Furnace: furnal de alianță care încălzește zona.</li>
+<li>Cold Snap: scădere de temperatură care îngheață castele.</li>
+<li>Frost Mine: teritoriu sezonier pentru expansiune, recompense și cristale.</li>
+<li>City: sat, manor, factory, town sau metropolă/bibliotecă nivel 6.</li>
+<li>Ice Crystals: resursă de scor legată de teritoriu deținut.</li>
+<li>Outpost: structură pentru expansiune cross-server.</li>
+<li>Tile: câmp de resurse, diferit de atacul pe castel.</li>
+<li>Rezumat: S1 recompensează căldura, coordonarea, stamina folosită bine, acordurile utile și endgame pregătit devreme.</li>
+</ul></article>
+</section><section class="lang-section" id="lang-pl" data-lang="pl">
+<div class="lang-title"><span>PL</span><h1>Polski</h1></div>
+<div class="toc-card"><h2>Table of Contents / Inhaltsverzeichnis / Índice</h2><ol><li><a href="#pl-1-cel-i-hierarchia-zrode">Cel i hierarchia źródeł</a></li><li><a href="#pl-2-sezon-1-w-jednym-zdaniu">Sezon 1 w jednym zdaniu</a></li><li><a href="#pl-3-przygotowanie-przed-sezonem">Przygotowanie przed sezonem</a></li><li><a href="#pl-4-ciepo-zamarzanie-i-piece">Ciepło, zamarzanie i piece</a></li><li><a href="#pl-5-pozycja-zamku-i-teren-skazony">Pozycja zamku i teren skażony</a></li><li><a href="#pl-6-kopalnie-miasta-i-krysztay-lodu">Kopalnie, miasta i kryształy lodu</a></li><li><a href="#pl-7-trasa-i-wczesna-ekspansja">Trasa i wczesna ekspansja</a></li><li><a href="#pl-8-kingdom-expedition-i-posterunki">Kingdom Expedition i posterunki</a></li><li><a href="#pl-9-dyplomacja-dni-wojny-i-pola-zasobow">Dyplomacja, dni wojny i pola zasobów</a></li><li><a href="#pl-10-class-hall-umiejetnosci-i-reset">Class Hall, umiejętności i reset</a></li><li><a href="#pl-11-bohaterowie-boosty-crystal-i-level-swap">Bohaterowie, boosty, Crystal i Level Swap</a></li><li><a href="#pl-12-miasta-poziom-6-royal-city-i-endgame">Miasta poziom 6, Royal City i endgame</a></li><li><a href="#pl-13-po-sezonie-1-i-black-market">Po Sezonie 1 i Black Market</a></li><li><a href="#pl-14-codzienna-checklista-liderow">Codzienna checklista liderów</a></li><li><a href="#pl-15-sownik-i-podsumowanie">Słownik i podsumowanie</a></li></ol></div>
+<article class="chapter" id="pl-1-cel-i-hierarchia-zrode"><a class="toplink" href="#top" title="Top">↑</a><h2>1. Cel i hierarchia źródeł</h2><ul>
+<li>Ten poradnik jest praktycznym przewodnikiem liderów dla X-Clash Sezon 1: Winter Is Coming / Polar Tempest. Jest dla każdej unii, nie dla konkretnego serwera.</li>
+<li>Hierarchia źródeł: oficjalne materiały X-Clash / Strawberry są najważniejsze; Animality / Pioneer Test Group to mocny dowód praktyczny; doświadczeni twórcy poradników i gracze to cenne raporty; pojedyncze komentarze mają niższą pewność.</li>
+<li>Jeśli kalendarz wydarzeń, oficjalna tabela lub aktualne zasady gry przeczą starym postom Discord, najpierw stosuj aktualne informacje w grze.</li>
+<li>Celem jest kolejność priorytetów: ciepło, terytorium, trasa, dyplomacja, stamina, nagrody i bezpieczeństwo końcówki sezonu.</li>
+</ul></article>
+<article class="chapter" id="pl-2-sezon-1-w-jednym-zdaniu"><a class="toplink" href="#top" title="Top">↑</a><h2>2. Sezon 1 w jednym zdaniu</h2><ul>
+<li>Sezon 1 to nie tylko walka. To logistyka, przetrwanie i kontrola terytorium.</li>
+<li>Najsilniejsze unie nie zawsze najwięcej atakują; utrzymują graczy w cieple, trzymają użyteczne kopalnie i miasta, dobrze wydają staminę, szanują przydatne umowy i wcześnie przygotowują finał.</li>
+<li>Zasada: zostań w cieple, rozwijaj się z celem, trzymaj to, co ważne, i nie czekaj do ostatniego tygodnia z naprawą błędów.</li>
+</ul></article>
+<article class="chapter" id="pl-3-przygotowanie-przed-sezonem"><a class="toplink" href="#top" title="Top">↑</a><h2>3. Przygotowanie przed sezonem</h2><ul>
+<li>Naucz graczy poprawnego parkowania zamków w ciepłych strefach. Rozproszone zamki zamarzają i tracą efektywność.</li>
+<li>Gracze muszą rozumieć punkt zbiórki / teleport unii. Zły relok kosztuje czas i ciepło.</li>
+<li>Usuń drużyny z obrony muru przed niebezpiecznymi fazami: Castle Wall &gt; City Defense &gt; odznacz Join the defense. Inaczej wróg może drenować wojsko.</li>
+<li>Oszczędzaj staminę. Frost Mines, zombie, potwory, szkielety, smoki, wilki/rekiny Nightfall i powtarzalne eventy używają tej samej puli.</li>
+<li>Zachowaj fioletowe odłamki S. Crystal 5 gwiazdek może stać się złotą S+ w S1, ale dalsze gwiazdki są drogie.</li>
+<li>Spodziewaj się bugów i zmian. Sprawdzaj kalendarz i aktualne zasady.</li>
+</ul></article>
+<article class="chapter" id="pl-4-ciepo-zamarzanie-i-piece"><a class="toplink" href="#top" title="Top">↑</a><h2>4. Ciepło, zamarzanie i piece</h2><ul>
+<li>Są dwa piece: osobisty Thermal Furnace dla własnego zamku/odporności oraz Union Furnace ogrzewający okolicę i zamki sojuszników.</li>
+<li>Cold Snap to powtarzalne zagrożenie. Bez gotowego pieca zamek może zamarznąć i stracić ważne akcje.</li>
+<li>Zamarznięty zamek może nadal zabijać Frost Zombies, farmić, zabijać zwykłe zombie, plądrować wagony, robić część zadań intelligence/tavern, atakować World Boss i relokować.</li>
+<li>Zamarznięty zamek nie może atakować Elite Zombies, odpalać rajdów ani brać udziału w Union Boss. Dyscyplina ciepła jest obowiązkowa.</li>
+<li>Union Furnace musi obejmować aktywnych graczy i ważne strefy. Głębiej na mapie często lepiej ustawić go przy/w zajętym mieście.</li>
+<li>Zajęte miasta dają lokalne ciepło. Frost Mines nie dają ciepła. Środek mapy jest zimniejszy niż obrzeża.</li>
+</ul></article>
+<article class="chapter" id="pl-5-pozycja-zamku-i-teren-skazony"><a class="toplink" href="#top" title="Top">↑</a><h2>5. Pozycja zamku i teren skażony</h2><ul>
+<li>Zamki powinny stać w ciepłej strefie, blisko grupy i w zasięgu Union Furnace.</li>
+<li>Unikaj ciemnego/skażonego terenu koło kopalń i miast; może dawać ograniczenia i większe ryzyko ataku.</li>
+<li>Na początku wiele unii zostaje przy wioskach poziom 1 lub Frost Mine poziom 2, gdzie łatwiej utrzymać temperaturę.</li>
+<li>Przed dużą relokacją ogrzej kluczowych graczy, sprawdź zasięg pieca i jasno powiedz słabszym, gdzie stać.</li>
+<li>Relokacja to nie tylko teleport. To decyzja o cieple, rajdach, obronie, staminie i aktywności.</li>
+</ul></article>
+<article class="chapter" id="pl-6-kopalnie-miasta-i-krysztay-lodu"><a class="toplink" href="#top" title="Top">↑</a><h2>6. Kopalnie, miasta i kryształy lodu</h2><ul>
+<li>Frost Mines i miasta są podstawą punktacji. Zdobycie pomaga, ale liczy się trzymanie dla Ice Crystals.</li>
+<li>Wartość kryształów zależy od tego, co unia posiada, nie tylko co kiedyś zdobyła. Porzucenie może obniżyć wartość.</li>
+<li>Bazowy limit Frost Mines często wynosi 3. Każde miasto/wioska zwykle dodaje limit; miasta poziom 6 często dają +2.</li>
+<li>Limity zależą od serwera i fazy cross-server. Zawsze sprawdzaj Union City i aktualne zasady eventu.</li>
+<li>Pierwsze zdobycie może dać skrzynie unii. Rozdzielaj je uczciwie i sprawdź tag first capture.</li>
+<li>Nie porzucaj ważnych miast/kopalń bez koordynacji. Terytorium to punkty, dostęp, trasa, ciepło i siła negocjacji.</li>
+</ul></article>
+<article class="chapter" id="pl-7-trasa-i-wczesna-ekspansja"><a class="toplink" href="#top" title="Top">↑</a><h2>7. Trasa i wczesna ekspansja</h2><ul>
+<li>Nie planuj idealnej trasy przed startem, bo pozycja początkowa może być znana dopiero po otwarciu mapy.</li>
+<li>Po starcie szybko ustal trasę do wartościowych kopalń, użytecznych miast i kluczowych stref.</li>
+<li>Jeśli boss Frost Mine jest za mocny, nie trać dnia; przejdź do niższej pobliskiej kopalni.</li>
+<li>Frost Mines nie zawsze trzeba brać numerycznie, ale zwykle muszą dotykać własnego terenu. Diagonal nie wystarcza.</li>
+<li>Miasta otwierają się czasowo. Później deklaracje mogą być ograniczone do środy i soboty.</li>
+</ul></article>
+<article class="chapter" id="pl-8-kingdom-expedition-i-posterunki"><a class="toplink" href="#top" title="Top">↑</a><h2>8. Kingdom Expedition i posterunki</h2><ul>
+<li>Kingdom Expedition otwiera fazę cross-server. R4/R5 stawiają outposty na innych serwerach, zwykle nie na własnym.</li>
+<li>Raporty o przenoszeniu outpostów są różne, więc traktuj pozycję jako ważną i sprawdź interfejs eventu.</li>
+<li>Po postawieniu outpostu pierwsza połączona kopalnia jest punktem startowym, potem ekspansja idzie przez sąsiedni teren.</li>
+<li>Expedition często pozwala na darmową relokację, jeśli zrobiona poprawnie. Niedoświadczeni powinni ćwiczyć, by nie marnować teleportów.</li>
+<li>Nie najeżdżaj w ciemno. Handel i dyplomacja oszczędzają wojsko, bo CoK i inne eventy trwają dalej.</li>
+<li>Każda unia wybiera cel, a wiele unii może naciskać ten sam serwer. Timing i dyplomacja są ważniejsze niż emocje.</li>
+</ul></article>
+<article class="chapter" id="pl-9-dyplomacja-dni-wojny-i-pola-zasobow"><a class="toplink" href="#top" title="Top">↑</a><h2>9. Dyplomacja, dni wojny i pola zasobów</h2><ul>
+<li>Sezon 1 może zniszczyć wojsko, jeśli zamki są atakowane bez sensu. Wiele serwerów ma umowy, by unikać strat.</li>
+<li>Koegzystencja to strategia. Wymiana celów, krótkie okna nagród i unikanie palenia zamków pomagają obu stronom.</li>
+<li>Pola zasobów różnią się od zamków. Bez paktu o nieagresji przeciwników na tile można często atakować.</li>
+<li>Dni wojny wymagają jasnych rozkazów: jeśli walczymy, to z celem i godziną; jeśli jest umowa, komunikujemy ją.</li>
+<li>Nieaktywni i niewalczący muszą znać oczekiwania co do tarcz. Błędy i konflikty o tile się zdarzają.</li>
+<li>Royal City może mieć 0 °C podczas CoK, ale nie jest stałym źródłem ciepła dla królestwa.</li>
+</ul></article>
+<article class="chapter" id="pl-10-class-hall-umiejetnosci-i-reset"><a class="toplink" href="#top" title="Top">↑</a><h2>10. Class Hall, umiejętności i reset</h2><ul>
+<li>Class Hall i Class EXP są ważne. Architect omawia się za budowę, research i siege.</li>
+<li>Niektóre skille zwiększają obrażenia durability muru miasta podczas city siege.</li>
+<li>Forced March i Siege Banner mają mieszane testy; nie inwestuj ślepo.</li>
+<li>Skille poziom 15+ odblokowują się różnie na serwerach; blokada może być fazą, bugiem lub opóźnieniem.</li>
+<li>Reset skilli klasy może być strategiczny. Normal skills zostają po S1, a season skills mogą zostać zwrócone lub zniknąć.</li>
+<li>Pod koniec przenieś punkty w Research, Building i Resource Production, jeśli pasuje do celu.</li>
+</ul></article>
+<article class="chapter" id="pl-11-bohaterowie-boosty-crystal-i-level-swap"><a class="toplink" href="#top" title="Top">↑</a><h2>11. Bohaterowie, boosty, Crystal i Level Swap</h2><ul>
+<li>Bohaterowie z boostem: Crystal, Sera, Fenixia/Fenxia, Daphne.</li>
+<li>Crystal jest ważna dla F2P/low spend: 5 gwiazdek może stać się złotą S+, ale potem wymaga wielu fioletowych S+ shardów.</li>
+<li>Level Swap wymienia tylko poziomy EXP. Nie przenosi gwiazdek, ascension, medali ani skilli; spadek poziomu może zablokować skille.</li>
+<li>Nie używaj Level Swap za wcześnie na złotym bohaterze bez gwiazdek. Najpierw zbierz shardy, potem wymień, gdy będzie gotowy.</li>
+<li>Sera’s Bow of Tomorrow to exclusive gear: nie zastępuje normalnego gearu, dodaje skille i może zwiększać max poziom. Wymaga zwykle Sery 5 gwiazdek i konkretnych shardów.</li>
+<li>Exclusive gear bywa drogi; Black Market / Season Festival może dać wolniejszy dostęp.</li>
+</ul></article>
+<article class="chapter" id="pl-12-miasta-poziom-6-royal-city-i-endgame"><a class="toplink" href="#top" title="Top">↑</a><h2>12. Miasta poziom 6, Royal City i endgame</h2><ul>
+<li>Miasta poziom 6 są jednymi z najważniejszych przed Royal City; mogą dawać dużo kryształów i dostęp.</li>
+<li>Jeśli trzymają je silne unie, negocjacje mogą być bardziej realne niż siła.</li>
+<li>Tydzień 7 to często decydujący push. Czekanie do końca jest niebezpieczne przez ochrony, blokady i zmiany zasad.</li>
+<li>Nie trać miasta poziom 6 późno zakładając, że odzyskasz po sezonie; wiele serwerów zgłasza locki.</li>
+<li>Royal City daje władzę, nagrody, tytuły lub buffy, ale niekoniecznie Ice Crystals. Royal Furnace grzeje lokalnie.</li>
+<li>Cel finału: najlepsza realna kombinacja fabryk, użytecznych miast, Frost Mines i dostępu przy minimalnych stratach.</li>
+</ul></article>
+<article class="chapter" id="pl-13-po-sezonie-1-i-black-market"><a class="toplink" href="#top" title="Top">↑</a><h2>13. Po Sezonie 1 i Black Market</h2><ul>
+<li>Po S1 może pojawić się Season Festival / Black Market jako faza regeneracji.</li>
+<li>Black Gold Coins, bingo questy i sklep są ważne. Priorytet: exclusive shardy, dekoracje, ramki, speedupy i zasoby bohaterów.</li>
+<li>Część budynków/mapy może zostać, ale Cold Snap, skarby lub Expedition się kończą.</li>
+<li>Zasady po sezonie różnią się między serwerami. Planuj tak, jakby tydzień 7 był ostatnią pewną szansą.</li>
+</ul></article>
+<article class="chapter" id="pl-14-codzienna-checklista-liderow"><a class="toplink" href="#top" title="Top">↑</a><h2>14. Codzienna checklista liderów</h2><ul>
+<li>Sprawdź kalendarz eventu przed rozkazami.</li>
+<li>Sprawdź piec, darowizny węgla/złota i ciepło.</li>
+<li>Używaj prób kopalń na cele trasy.</li>
+<li>Koordynuj deklaracje i unikaj przypadkowego porzucania.</li>
+<li>Śledź dyplomację, NAP i zasady tile.</li>
+<li>Przypominaj o rozsądnej staminie między kopalniami, zombie, Arm Race, szkieletami, smokami, Nightfall i eventami.</li>
+<li>Przygotuj tydzień 7: kluczowe miasta, kopalnie dostępu, timing wroga, piec, liderów rajdów i tarcze.</li>
+</ul></article>
+<article class="chapter" id="pl-15-sownik-i-podsumowanie"><a class="toplink" href="#top" title="Top">↑</a><h2>15. Słownik i podsumowanie</h2><ul>
+<li>Thermal Furnace: osobisty piec dla ciepła i odporności.</li>
+<li>Union Furnace: piec unii ogrzewający obszar.</li>
+<li>Cold Snap: spadek temperatury zamrażający zamki.</li>
+<li>Frost Mine: sezonowe terytorium dla ekspansji, nagród i kryształów.</li>
+<li>City: wioska, manor, factory, town lub metropolia/biblioteka poziom 6.</li>
+<li>Ice Crystals: główny zasób punktacji powiązany z posiadanym terytorium.</li>
+<li>Outpost: struktura Expedition dla ekspansji cross-server.</li>
+<li>Tile: pole zasobów, traktowane inaczej niż zamek.</li>
+<li>Podsumowanie: S1 nagradza ciepło, koordynację, dobrą staminę, użyteczne umowy i wczesne zabezpieczenie endgame.</li>
+</ul></article>
+</section>
+</main>
+<footer class="footer">X-Clash Season 1: Winter Is Coming / Polar Tempest - community strategy guide.</footer>
+<script>
+const sections=[...document.querySelectorAll('.lang-section')];
+const buttons=[...document.querySelectorAll('.lang-btn')];
+function setLang(lang, jump=true){
+  sections.forEach(s=>s.classList.toggle('active',s.dataset.lang===lang));
+  buttons.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+  document.documentElement.lang=lang;
+  localStorage.setItem('xclash-s1-lang',lang);
+  if(jump) location.hash='lang-'+lang;
+}
+buttons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+let initial=(location.hash.match(/lang-([a-z]+)/)||[])[1] || localStorage.getItem('xclash-s1-lang') || 'en';
+if(!document.querySelector('#lang-'+initial)) initial='en';
+setLang(initial,false);
+</script>
+</body>
+</html>
