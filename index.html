@@ -275,6 +275,105 @@ main{position:relative;z-index:2}.top,.bottom{z-index:40}.bottom{z-index:45}
   }
 }
 
+
+/* Codex atmosphere pass: illustrated mobile-safe fantasy scenes */
+body{
+  background-color:#050b16!important;
+  background-size:cover;
+}
+body.scene-home{background:
+  radial-gradient(circle at 12% 12%,rgba(139,233,255,.24),transparent 28%),
+  radial-gradient(circle at 90% 18%,rgba(247,212,107,.23),transparent 30%),
+  radial-gradient(circle at 50% 100%,rgba(167,139,250,.20),transparent 38%),
+  linear-gradient(135deg,#050b16 0%,#101f42 46%,#3a1d4b 74%,#070d1a 100%)!important}
+body.scene-tools{background:
+  radial-gradient(circle at 15% 16%,rgba(34,211,238,.24),transparent 32%),
+  radial-gradient(circle at 88% 20%,rgba(247,212,107,.20),transparent 28%),
+  linear-gradient(135deg,#030711 0%,#07223f 46%,#26114a 78%,#050811 100%)!important}
+body.scene-game,body.scene-gameplay{background:
+  radial-gradient(circle at 16% 10%,rgba(139,233,255,.23),transparent 34%),
+  radial-gradient(circle at 84% 30%,rgba(134,239,172,.18),transparent 31%),
+  linear-gradient(135deg,#04101f 0%,#0d2d52 46%,#2b1546 82%,#050b16 100%)!important}
+body.scene-seasons{background:
+  radial-gradient(circle at 10% 18%,rgba(139,233,255,.24),transparent 30%),
+  radial-gradient(circle at 88% 16%,rgba(243,179,91,.27),transparent 31%),
+  linear-gradient(135deg,#041326 0%,#18243d 42%,#4b270d 100%)!important}
+body.scene-winter{--accent:#8be9ff;--gold:#e8fbff;background:
+  radial-gradient(ellipse at 18% 4%,rgba(232,251,255,.46),transparent 30%),
+  radial-gradient(ellipse at 80% 10%,rgba(74,222,255,.30),transparent 34%),
+  linear-gradient(155deg,#020916 0%,#06203e 42%,#0f4f78 76%,#03111f 100%)!important}
+body.scene-desert{--accent:#f3b35b;--gold:#f7d46b;background:
+  radial-gradient(ellipse at 20% 8%,rgba(247,212,107,.34),transparent 33%),
+  radial-gradient(ellipse at 86% 18%,rgba(251,146,60,.28),transparent 31%),
+  linear-gradient(155deg,#160907 0%,#4b230d 48%,#8a4b17 78%,#1b0f08 100%)!important}
+
+body:before{
+  opacity:.92!important;
+  background:
+    radial-gradient(ellipse at 50% 115%,rgba(0,0,0,.68),transparent 48%),
+    linear-gradient(100deg,transparent 0 18%,rgba(139,233,255,.13) 24%,transparent 35% 60%,rgba(247,212,107,.11) 70%,transparent 86%),
+    repeating-linear-gradient(118deg,rgba(255,255,255,.035) 0 1px,transparent 1px 24px)!important;
+  animation:ambientDrift 18s ease-in-out infinite alternate!important;
+}
+body:after{
+  opacity:.52!important;
+  mix-blend-mode:screen;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(139,233,255,.20),transparent 22%),
+    radial-gradient(circle at 85% 24%,rgba(247,212,107,.16),transparent 24%),
+    linear-gradient(115deg,transparent 0 38%,rgba(255,255,255,.13) 45%,transparent 54%)!important;
+  animation:stormVeil 12s linear infinite!important;
+}
+body.scene-winter:after{
+  background:
+    linear-gradient(110deg,transparent 0 30%,rgba(139,233,255,.22) 38%,transparent 50%),
+    repeating-linear-gradient(102deg,rgba(232,251,255,.10) 0 2px,transparent 2px 30px)!important;
+}
+body.scene-desert:after{
+  background:
+    linear-gradient(105deg,transparent 0 25%,rgba(247,192,113,.24) 38%,transparent 52%),
+    repeating-linear-gradient(100deg,rgba(247,192,113,.11) 0 3px,transparent 3px 34px)!important;
+}
+@keyframes stormVeil{from{transform:translate3d(-4%,0,0) skewX(-4deg)}to{transform:translate3d(4%,1.2%,0) skewX(-4deg)}}
+
+#fx{opacity:1!important}
+.fx.flake{font-weight:900;color:#f4fdff!important;text-shadow:0 0 10px rgba(139,233,255,.95),0 0 22px rgba(232,251,255,.65)!important}
+.fx.sand{height:4px!important;width:18px!important;background:linear-gradient(90deg,transparent,#f7d46b,#fb923c,transparent)!important;box-shadow:0 0 18px rgba(247,192,113,.95)!important}
+.fx.spark{width:6px!important;height:6px!important;box-shadow:0 0 20px rgba(247,212,107,.95),0 0 34px rgba(139,233,255,.38)!important}
+.fx.rune{font-weight:900;color:rgba(191,219,254,.84)!important;text-shadow:0 0 16px rgba(139,233,255,.75),0 0 26px rgba(167,139,250,.65)!important}
+.fx.streak{height:3px!important;width:140px!important;background:linear-gradient(90deg,transparent,rgba(139,233,255,.95),rgba(255,255,255,.8),transparent)!important}
+
+.hero{
+  border-color:rgba(139,233,255,.32)!important;
+  box-shadow:0 22px 70px rgba(0,0,0,.42),0 0 34px rgba(139,233,255,.18),0 0 58px rgba(247,212,107,.10)!important;
+}
+.tile,.card,.chapter,.guideBlock,.guideHero,.menuColumn,.eventCard{
+  box-shadow:0 18px 52px rgba(0,0,0,.44),0 0 0 1px rgba(255,255,255,.035) inset,0 0 26px rgba(139,233,255,.055)!important;
+}
+.tile{border-left:4px solid rgba(139,233,255,.72)!important}
+.grid .tile:nth-child(2),.guideStack .tile:nth-child(1){border-left-color:rgba(167,139,250,.84)!important}
+.grid .tile:nth-child(3),.seasonDesert{border-left-color:rgba(247,212,107,.9)!important}
+.grid .tile:nth-child(4){border-left-color:rgba(134,239,172,.84)!important}
+
+@media(max-width:900px){
+  body:before{opacity:.82!important}
+  body:after{opacity:.40!important}
+  #fx{opacity:.78!important}
+  main{background:linear-gradient(180deg,rgba(5,11,22,.50),rgba(5,11,22,.72))!important}
+  .hero,.card,.tile,.chapter,.guideBlock,.guideHero,.menuColumn,.eventCard,.timeItem,.result,.tick,.menuCard,.guideMini{
+    border-color:rgba(139,233,255,.22)!important;
+    box-shadow:0 18px 48px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.045) inset,0 0 28px rgba(139,233,255,.08)!important;
+  }
+  .scene-winter .card,.scene-winter .chapter,.scene-winter .tile,.seasonWinter{
+    border-color:rgba(139,233,255,.40)!important;
+    box-shadow:0 18px 48px rgba(0,0,0,.55),0 0 30px rgba(139,233,255,.12)!important;
+  }
+  .scene-desert .card,.scene-desert .chapter,.scene-desert .tile,.seasonDesert{
+    border-color:rgba(247,212,107,.38)!important;
+    box-shadow:0 18px 48px rgba(0,0,0,.55),0 0 30px rgba(247,146,60,.12)!important;
+  }
+}
+
 </style>
 </head>
 <body class="scene-home"><div id="fx" aria-hidden="true"></div>
@@ -358,7 +457,7 @@ function buildFx(scene){
  const mobile=innerWidth<640;
  const map={winter:["flake","streak"],desert:["sand"],home:["spark","rune","sand","flake"],game:["ember","spark","leaf"],gameplay:["ember","spark","leaf"],tools:["spark","rune","streak"],seasons:["flake","sand","spark"],settings:["rune","spark"]};
  const types=map[scene]||map.home;
- const count=mobile?26:44;
+ const count=mobile?42:72;
  const runes=["✦","✧","◆","✹","✺","✶"];
  for(let i=0;i<count;i++){
   const type=types[i%types.length]; const el=document.createElement("span"); el.className="fx "+type;
